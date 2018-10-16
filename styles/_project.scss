@@ -19,6 +19,25 @@
   padding-top: 40px;
 }
 
+h2 {
+  font-size: 1.4em;
+  line-height: 1.4em;
+  text-align: center;
+  font-family: 'Benton Sans';
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.rule {
+  margin-left:auto;
+  margin-right:auto;
+  width:33%;
+  border-bottom: 1px solid #dfdfdf;
+  margin-bottom:40px;
+  padding-bottom:40px;
+}
+
+
 section.container-lg {
   max-width:520px !important;
 }
@@ -56,13 +75,21 @@ margin-right:auto;
 .slide {
   width:800px;
   margin-left:auto;
-  margin-right:auto; 
+  margin-right:auto;
+
+.adjust {
+  min-height:60px;
+}
+
+.district:hover {
+  opacity:0.8;
+  cursor:pointer;
+} 
 
 .grid {
-  height:400px;
-  background-color:#888888;
   display:inline-block;
-  width:32%;
+  width:48%;
+  vertical-align:top;
 }
 
 .midgrid {
@@ -103,8 +130,24 @@ display:none !important;
   width:30px;
   height:30px;
   display:inline-block;
-  margin:5px;
-  padding:5px 5px 5px 5px;
+  padding:7px 9px 5px 3px;
+}
+
+.seat:hover {
+  opacity:0.8;
+  cursor:default;
+}
+
+.districtName {
+  font-weight:bold;
+}
+
+.bar {
+  margin-top:14px;
+}
+
+.count {
+  font-weight:900;
 }
 
 #chartTrend .c3-line {
@@ -312,6 +355,19 @@ text-align:center;
 #swingChart img {
 width:100%;
 }
+
+.tooltip {
+  font-family: "Benton Sans", Helvetica, Arial, sans-serif;
+  background-color: white;
+  height: auto;
+  width: auto;
+  padding: 10px;
+  border-radius: 0;
+  opacity:1 !important;
+  border: 1px solid black;
+  font-size: 13px;
+  font-family: Arial;
+  }
 
 .row {
 display:inline-block;
@@ -835,6 +891,25 @@ font-weight: bold;
 stroke:#8C1B17;
 }
 
+.rstrong {
+  background-color: #8C1B17;
+  fill: #8C1B17 !important;
+  color: white !important;
+  pointer-events: all;
+  font-weight: bold;
+  stroke:#8C1B17;
+}
+
+.rfade {
+  background-color: #C68985;
+  fill: #C68985 !important;
+  color: white !important;
+  pointer-events: all;
+  font-weight: bold;
+  stroke:#8C1B17;
+}
+  
+
 .r0 {
 background-color: #8C1B17;
 fill: #8C1B17 !important;
@@ -911,7 +986,23 @@ fill: #3f88c5 !important;
 color: white !important;
 pointer-events: all;
 font-weight: bold;
-stroke:#3f88c5 !important;
+}
+
+.dstrong {
+  background-color: #3f88c5;
+  fill: #3f88c5 !important;
+  color: white !important;
+  pointer-events: all;
+  font-weight: bold;
+}
+
+.dfade {
+  background-color: #ABCEE8;
+  opacity:0.5;
+  fill: #ABCEE8 !important;
+  color: white !important;
+  pointer-events: all;
+  font-weight: bold;
 }
 
 .d0 {
@@ -1315,6 +1406,9 @@ z-index: 1;
 @media (max-width:600px) {
 .brick {
   width:2px;
+}
+.slide .adjust {
+  min-height:100px;
 }
 }
 

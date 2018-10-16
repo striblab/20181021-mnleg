@@ -14,8 +14,11 @@ class Map {
     this.zoomed = false;
     this.scaled = $(target).width()/520;
     this.colorScale = d3.scaleOrdinal()
-    .domain(["GOP", "DFL"])
-    .range(['#C0272D',"#0258A0"]);
+    .domain(["D Tossup", "D Competitive", "D Lean", "D Strong", "R Tossup", "R Competitive", "R Lean", "R Strong"])
+    .range(["dstrong","dstrong","dfade","dfade","rstrong","rstrong","rfade","rfade"]);
+    // this.colorScale = d3.scaleOrdinal()
+    // .domain(["GOP", "DFL"])
+    // .range(['#C0272D',"#0258A0"]);
   }
 
   /********** PRIVATE METHODS **********/
@@ -65,32 +68,37 @@ class Map {
     });
 
     g.append("g")
-        .attr("class", "counties")
+        .attr("class", "districts")
       .selectAll("path")
       .data(topojson.feature(mnleg, mnleg.objects.mnleg).features)
       .enter().append("path")
         .attr("d", path)
-        .attr("class", function(d) { return "county C" + d.properties.COUNTYFIPS; })
-        .attr("id", function(d) { return "P" + d.properties.COUNTYFIPS; } )
-        .style("stroke-width", '1')
-        .style("stroke","#000000")
-        .style("fill",function(d) {
-          var party;
+        .attr("id", function(d) { return "D" + d.properties.seatName; } )
+        .style("stroke-width", '0.5')
+        .style("stroke","#ffffff")
+        .attr("class",function(d) {
+          var lean;
           for (var i=0; i < data.length; i++) {
             if (d.properties.DISTRICT == data[i].seatName) {
-                party = data[i].party;
+                if (data[i].party == "GOP" && data[i].watching == "N") { lean = "R Strong"; }
+                else if (data[i].party == "GOP" && data[i].watching == "Y") { lean = "R Tossup"; }
+                else if (data[i].party == "DFL" && data[i].watching == "N") { lean = "D Strong"; }
+                else if (data[i].party == "DFL" && data[i].watching == "Y") { lean = "D Tossup"; }
+                break;
             }
           }
-          return self.colorScale(party);
+          return self.colorScale(lean) + " district " + d.properties.seatName;;
         })
         .on("mouseover", function(d) {
-          var votes;
+          var string;
           for (var i=0; i < data.length; i++) {
             if (d.properties.DISTRICT == data[i].seatName) {
-                party = data[i].party;
+                string = "<div class='districtName'>District " + data[i].seatName + "</div><div>" + data[i].first + " " + data[i].last + " (" + data[i].party + ")</div><div>" + data[i].from +  "</div><div class='" + self.colorScale(data[i].lean) + "'>" + data[i].cpvi + "</div>";
+                break;
             }
           }
-          tooltip.html("<div class='countyName' background-color:" + self.colorScale(party) + ";'>" + d.properties.DISTRICT + "</div>");
+          
+          tooltip.html(string);
           $(".d3-tooltip").show();
           tooltip.show();
       })

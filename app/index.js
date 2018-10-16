@@ -108,6 +108,7 @@ function chartBuilder(){
                     {value: 2012, text: 'Obama (D) Win', position: 'start'},
                     {value: 2014, text: 'Midterm', position: 'start'},
                     {value: 2016, text: 'Trump (R) Win', position: 'start'},
+                    {value: 2018, text: 'Midterm', position: 'start'}
                 ]
             }
         },
@@ -128,8 +129,11 @@ function chartBuilder(){
     chartBuilder();
 
 var data = rankings.scores;
+var colorScale = d3.scaleOrdinal()
+    .domain(["D Tossup", "D Competitive", "D Lean", "D Strong", "R Tossup", "R Competitive", "R Lean", "R Strong"])
+    .range(["d1","d2","d3","d4","r1","r2","r3","r4"]);
 
-function chamberGrid(target, data, party) {
+function chamberGrid(target, data, party, lean, index) {
     d3.helper = {};
 
     d3.helper.tooltip = function(accessor){
@@ -168,34 +172,186 @@ function chamberGrid(target, data, party) {
         };
     };
 
+ var dataFiltered = data.filter(function(d){ return (d.party == party) && (d.lean == lean)}).sort(function(a, b) { return d3['descending'](a.score, b.score); });
+
+  $("#" + party + index).html(dataFiltered.length)
+
   d3.select(target).selectAll(".seat")
-  .data(data.filter(function(d){ return d.party == party}).sort(function(a, b) { return d3['descending'](a.score, b.score); })).enter().append("div")
+  .data(dataFiltered).enter().append("div")
   .attr("id", function (d) { return "d" + d.district; })
   .on("click", function (d) { 
     // d3.selectAll(".seat").classed("selected",false);
     // d3.select(this).classed("selected",true);
    })
-  .attr("class",function (d){ 
-        if (party == "GOP") { 
-            var color =  "r2";
-        }
-        else if (party == "DFL") { 
-            var color =  "d2";
-        }
-      
-        return color + " seat district"; })
+  .attr("class",function (d){ return colorScale(lean) + " seat"; })
     .html(function (d){ 
         return d.district;
     })
   .call(d3.helper.tooltip(function(d, i){
-    return d.seatName;
+    return "<div class='districtName'>District " + d.seatName + "</div><div>" + d.first + " " + d.last + " (" + d.party + ")</div><div>" + d.from + "</div><div class='" + colorScale(lean) + "'>" + d.cpvi + "</div>";
   }));
 
 }
 
-chamberGrid("#mnaxis .gopGrid", data, "GOP");
-chamberGrid("#mnaxis .dflGrid", data, "DFL");
+chamberGrid("#rGrid .blocks1", data, "GOP", "R Tossup", 1);
+chamberGrid("#dGrid .blocks1", data, "DFL", "D Tossup", 1);
 
-var map = new Map("map");
+chamberGrid("#rGrid .blocks2", data, "GOP", "R Competitive", 2);
+chamberGrid("#dGrid .blocks2", data, "DFL", "D Competitive", 2);
+
+chamberGrid("#rGrid .blocks3", data, "GOP", "R Lean", 3);
+chamberGrid("#dGrid .blocks3", data, "DFL", "D Lean", 3);
+
+chamberGrid("#rGrid .blocks4", data, "GOP", "R Strong", 4);
+chamberGrid("#dGrid .blocks4", data, "DFL", "D Strong", 4);
+
+var map = new Map("#map");
 
 map.render();
+
+function chartAxis(container, chamber){
+
+    var dAxis = [];
+    var rAxis = [];
+    var dValues = [];
+    var rValues = [];
+    
+    dAxis[0] = "DEM_x";
+    rAxis[0] = "GOP_x";
+    dValues[0] = "DEM";
+    rValues[0] = "GOP";
+    
+    
+    var dataD = dataAxis.filter(function(d){ return d.chamber == chamber && d.party == "DEM"});
+    var dataR = dataAxis.filter(function(d){ return d.chamber == chamber && d.party == "GOP"});
+    
+    var index = 1;
+    
+    for (var i=0; i < dataD.length; i++){
+      dAxis[index] = dataD[i].margin;
+      dValues[index] = dataD[i].score;
+      index++;
+    }
+    
+    index = 1;
+    
+    for (var i=0; i < dataR.length; i++){
+      rAxis[index] = dataR[i].margin;
+      rValues[index] = dataR[i].score;
+      index++;
+    }
+    
+    
+    var  padding = {
+            top: 20,
+            right: 60,
+            bottom: 20,
+            left: 60,
+        };
+    
+    var chartAxis = c3.generate({
+            bindto: container,
+            padding: padding,
+        data: {
+            xs: {
+                DEM: 'DEM_x',
+                GOP: 'GOP_x'
+            },
+            columns: [
+                rAxis,
+                rValues,
+                dAxis,
+                dValues
+            ],       
+            colors: {
+                'DEM': '#3F88C5',
+                'GOP': '#A52129',
+            },
+            type: 'scatter'
+        },
+            point: {
+                show: true,
+                r: function(d) { return 3; }
+            },        
+            legend: {
+                show: false
+            },
+        axis: {
+            rotated: true,
+          y: {
+                max: 60,
+                min: -60,
+                padding: {left: 0, right: 0, bottom: 0, top: 0},
+                tick: {
+                 count: 11,
+                 values: [-80,-60,-40,-20,0,20,40,60,80],
+                    format: function (d) {
+                        if (d < 0) {
+                            return "D+" + (d * -1);
+                        } else if (d > 0) {
+                            return "R+" + (d * 1);
+                        } else if (d == 0) {
+                            return "EVEN";
+                        }
+                    }
+              } 
+            },
+            x: {
+                max: 80,
+                min: -80,
+                label: {
+                    text: '⬅ Higher Trump win margin'
+                },
+                padding: {left: 0, right: 0, bottom: 0, top: 0},
+                tick: {
+                    values: [-80,-60,-40,-20,0,20,40,60,80],
+                    count: 5,
+                    multiline: false
+                },
+              }
+            },
+        grid: {
+            focus:{
+                show:false
+            },
+            y: {
+              lines: [
+                    {value: 0, text: '', position: 'start', class:'powerline'}
+              ]
+    
+            },        
+            x: {
+              lines: [
+                    {value: 0, text: '', position: 'start', class:'powerline'}
+              ]
+    
+            }
+        },
+        regions: [
+            {axis: 'x', start: -5, end: 5, class: 'regionX'},
+            {axis: 'y', start: -5, end: 5, class: 'regionX'}
+        ],
+          tooltip: {
+            contents: function(d, defaultTitleFormat, defaultValueFormat, color, i) {
+              var state, color, district;
+    
+              var thisData = dataAxis.filter(function(g){ return g.chamber == chamber && g.party == d[0].id && g.score == d[0].value && g.margin == d[0].x; });
+    
+              if (d[0].id == "GOP") {
+                color = "r4";
+                state = thisData[0].statePostal;
+                district = thisData[0].seatNum;
+              } else {
+                color = "d4"
+                state = thisData[0].statePostal;
+                district = thisData[0].seatNum;
+              }
+    
+              return '<div class="chart-tooltip ' + color + '">' + state + '-' + district + 
+                '<span class="tooltip-label">: ' + d3.format("+.0f")(d[0].x) + ' | </span>' +
+                '<span class="tooltip-value">' + defaultValueFormat(d[0].value) + '</span>' +
+                '</div>';
+            }
+          }
+        });
+    }
