@@ -75,6 +75,9 @@ h2 {
       width:48%;
       vertical-align:top;
  }
+ .focused {
+     background-color:#eeeeee;
+ }
   .midgrid {
       height:400px;
       background-color:#dddddd;
@@ -103,10 +106,10 @@ h2 {
       margin-right:auto;
  }
   .seat {
-      width:30px;
-      height:30px;
+      width:28px;
+      height:28px;
       display:inline-block;
-      padding:7px 9px 5px 3px;
+      padding:7px 9px 5px 2px;
  }
   .seat:hover {
       opacity:0.8;
