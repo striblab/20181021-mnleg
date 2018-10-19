@@ -247,7 +247,9 @@ function chamberGrid(target, data, party, lean, index) {
             return d.district;
         })
         .call(d3.helper.tooltip(function(d, i) {
-            return "<div class='districtName'>District " + d.seatName + "</div><div>" + d.first + " " + d.last + " (" + d.party + ")</div><div>" + d.from + "</div><div class='" + colorScale(lean) + "'>" + d.cpvi + "</div>";
+            var status = d.first + " " + d.last + " (" + d.party + ")";
+            if (d.special_status == "open") { status = "Open Seat"; }
+            return "<div class='districtName'>District " + d.seatName + "</div><div>" + status + "</div><div class='" + colorScale(lean) + "'>" + d.cpvi + "</div>";
         }));
 
 }
@@ -268,3 +270,49 @@ chamberGrid("#dGrid .blocks4", data, "DFL", "D Strong", 4);
 var map = new Map("#map");
 
 map.render();
+
+
+//prez popularity chart
+function chartPoll(container, data) {
+
+    d3.select(container).selectAll(".pollstack")
+        .data(data).enter().append("div")
+        .attr("class", function(d, i) {
+            return "pollstack";
+        })
+        .on("click", function(d) {
+
+        })
+        .html(function(d) {
+
+            var color = "r4";
+            var color2 = "green3";
+
+            if (d.party == "D") {
+                color = "d4";
+            }
+            if (d.approval < 0.50) {
+                color2 = "orange3";
+            }
+
+            return '<div class="column prez ' + color + '">' + d.president + ' ' + d.year + '</div><div class="column ' + color2 + '">' + d3.format(".0%")(d.approval) + '</div><div class="column chartCol ' + color + '">' + d3.format("+")(d.mnhouse_loss) + '</div>';
+        });
+
+}
+
+
+var data;
+
+function loadData(data) {
+    chartPoll("#approvalSpill", data);
+}
+
+$.ajax({
+    url: './data/approval.json',
+    async: false,
+    dataType: 'json',
+    success: function(response) {
+        data = response.approval;
+        loadData(data);
+    }
+});

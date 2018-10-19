@@ -134,6 +134,9 @@ h2 {
       opacity: 1 !important;
       stroke-width: 2px !important;
  }
+ #approvalSpill, .columnHead {
+    text-align:center;
+}
   .powerline {
       stroke-dasharray: 5, 5;
       stroke: #333;

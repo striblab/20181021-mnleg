@@ -98,9 +98,12 @@ class Map {
             })
             .on("mouseover", function(d) {
                 var string;
+                var status;
                 for (var i = 0; i < data.length; i++) {
                     if (d.properties.DISTRICT == data[i].seatName) {
-                        string = "<div class='districtName'>District " + data[i].seatName + "</div><div>" + data[i].first + " " + data[i].last + " (" + data[i].party + ")</div><div>" + data[i].from + "</div><div class='" + self.colorScale(data[i].lean) + "'>" + data[i].cpvi + "</div>";
+                        status = data[i].first + " " + data[i].last + " (" + data[i].party + ")";
+                        if (data[i].special_status == "open") { status = "Open Seat"; }
+                        string = "<div class='districtName'>District " + data[i].seatName + "</div><div>" + status + "</div><div class='" + self.colorScale(data[i].lean) + "'>" + data[i].cpvi + "</div>";
                         break;
                     }
                 }
