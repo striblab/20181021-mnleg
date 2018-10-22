@@ -248,8 +248,10 @@ function chamberGrid(target, data, party, lean, index) {
         })
         .call(d3.helper.tooltip(function(d, i) {
             var status = d.first + " " + d.last + " (" + d.party + ")";
+            var opponent = "<div>vs. " + d.opponent + " (" + d.opponent_party + ")</div>";
+            if (d.opponent == "null") { opponent = ""; }
             if (d.special_status == "open") { status = "Open Seat"; }
-            return "<div class='districtName'>District " + d.seatName + "</div><div>" + status + "</div><div class='" + colorScale(lean) + "'>" + d.cpvi + "</div>";
+            return "<div class='districtName'>District " + d.seatName + "</div><div>" + status + "</div>" + opponent + "<div class='" + colorScale(lean) + "'>" + d.cpvi + "</div>";
         }));
 
 }

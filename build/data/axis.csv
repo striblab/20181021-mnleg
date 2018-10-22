@@ -1,135 +1,135 @@
-description,seatName,chamber,seatNum,statePostal,stateName,first,last,party,opponent,opponent_party,dem,gop,margin,clinton,trump,district,score,cpvi,lean,lean2,special_status,watching,region,area,majority_county,from
-25B,25B,mnhouse,25B,MN,Minnesota,Duane,Sauke,DFL,null,null,51.79,48.08,9.91,49.7,39.79,25B,-2,D+2,D Competitive,Democratic,,Y,outstate,outstate,Olmsted,Rochester
-50B,50B,mnhouse,50B,MN,Minnesota,Andrew,Carlson,GOP,null,null,53.54,46.2,19.03,54.96,35.93,50B,-7,D+7,D Competitive,Democratic,,Y,metro,cities,Hennepin,Bloomington
-52B,52B,mnhouse,52B,MN,Minnesota,Regina,Barr,DFL,null,null,49.62,50.17,7.78,49.35,41.57,52B,-6,D+6,D Competitive,Democratic,,Y,metro,metro,Dakota,Inver Grove Heights
-04A,04A,mnhouse,04A,MN,Minnesota,Ben,Lien,DFL,null,null,62.2,37.72,7.19,48.46,41.27,04A,-6,D+6,D Lean,Democratic,,N,outstate,outstate,Clay,Moorhead
-04B,04B,mnhouse,04B,MN,Minnesota,Paul,Marquart,DFL,null,null,53.85,46.09,-21.59,35.11,56.7,04B,-7,D+7,D Lean,Democratic,,N,outstate,outstate,Clay,Dilworth
-07A,07A,mnhouse,07A,MN,Minnesota,Jennifer,Schultz,DFL,null,null,70.3,29.42,33.46,61.42,27.96,07A,-19,D+19,D Lean,Democratic,,N,outstate,outstate,St. Louis,Duluth
-11A,11A,mnhouse,11A,MN,Minnesota,Mike,Sundin,DFL,null,null,59.68,40.18,1.78,46.53,44.75,11A,-11,D+11,D Lean,Democratic,,N,outstate,outstate,Carlton,Esko
-19A,19A,mnhouse,19A,MN,Minnesota,Clark,Johnson,DFL,null,null,52.68,47.23,-4.07,43.1,47.17,19A,-24,D+24,D Lean,Democratic,open,N,outstate,outstate,Nicollet,North Mankato
-19B,19B,mnhouse,19B,MN,Minnesota,John (Jack),Considine Jr.,DFL,null,null,59.55,40.23,7.67,48.18,40.51,19B,-10,D+10,D Lean,Democratic,,N,outstate,outstate,Blue Earth,Mankato
-36B,36B,mnhouse,36B,MN,Minnesota,Melissa,Hortman,DFL,null,null,55.66,44.11,11.98,51.72,39.74,36B,-4,D+4,D Lean,Democratic,,N,metro,cities,Hennepin,Brooklyn Park
-37A,37A,mnhouse,37A,MN,Minnesota,Erin,Koegel,DFL,null,null,47.17,44.49,-0.67,44.95,45.62,37A,-2,D+2,D Lean,Democratic,,N,metro,metro,Anoka,Coon Rapids
-41B,41B,mnhouse,41B,MN,Minnesota,Mary,Kunesh-Podein,DFL,null,null,63.24,36.5,32.65,61.46,28.81,41B,-13,D+13,D Lean,Democratic,,N,metro,cities,Ramsey,Columbia Heights
-42B,42B,mnhouse,42B,MN,Minnesota,Jamie,Becker-Finn,DFL,null,null,56.9,42.92,20.46,55.45,34.99,42B,-5,D+5,D Lean,Democratic,,N,metro,cities,Ramsey,Shoreview
-43A,43A,mnhouse,43A,MN,Minnesota,Peter,Fischer,DFL,null,null,54.95,44.84,15.69,53.42,37.73,43A,-2,D+2,D Lean,Democratic,,N,metro,cities,Ramsey,Maplewood
-44B,44B,mnhouse,44B,MN,Minnesota,Jon,Applebaum,DFL,null,null,54.89,44.89,21.64,56.57,34.93,44B,-3,D+3,D Lean,Democratic,open,N,metro,cities,Hennepin,Minnetonka
-49B,49B,mnhouse,49B,MN,Minnesota,Paul,Rosenthal,DFL,null,null,55.38,44.39,19.91,55.83,35.92,49B,-2,D+2,D Lean,Democratic,open,N,metro,cities,Hennepin,Edina
-51A,51A,mnhouse,51A,MN,Minnesota,Sandra,Masin,DFL,null,null,57.64,41.99,16.99,53.83,36.84,51A,-4,D+4,D Lean,Democratic,,N,metro,metro,Dakota,Eagan
-51B,51B,mnhouse,51B,MN,Minnesota,Laurie,Halverson,DFL,null,null,56.5,43.35,16.89,53.47,36.58,51B,-2,D+2,D Lean,Democratic,,N,metro,metro,Dakota,Eagan
-54A,54A,mnhouse,54A,MN,Minnesota,Keith,Franke,DFL,null,null,48.46,51.43,3.25,46.43,43.18,54A,-1,D+1,D Lean,Democratic,,N,metro,metro,Washington,St. Paul Park
-03A,03A,mnhouse,03A,MN,Minnesota,Rob,Ecklund,DFL,null,null,63.25,36.55,-6.45,42.72,49.17,03A,-13,D+13,D Strong,Democratic,,N,outstate,outstate,St. Louis,International Falls
-03B,03B,mnhouse,03B,MN,Minnesota,Mary,Murphy,DFL,null,null,59.57,40.32,7.47,49.68,42.21,03B,-10,D+10,D Strong,Democratic,,N,outstate,outstate,St. Louis,Hermantown
-05A,05A,mnhouse,05A,MN,Minnesota,Matt,Bliss,DFL,null,null,45.99,53.88,-12.15,39.2,51.35,05A,1,R+1,D Strong,Republican,,N,outstate,outstate,Beltrami,Bemidji
-06A,06A,mnhouse,06A,MN,Minnesota,Julie,Sandstede,DFL,null,null,58.85,40.76,-3.13,44.23,47.36,06A,-13,D+13,D Strong,Democratic,,N,outstate,outstate,St. Louis,Hibbing
-06B,06B,mnhouse,06B,MN,Minnesota,Jason,Metsa,DFL,null,null,60.42,39.44,-2.69,44.62,47.31,06B,-12,D+12,D Strong,Democratic,open,N,outstate,outstate,St. Louis,Virginia
-07B,07B,mnhouse,07B,MN,Minnesota,Liz,Olson,DFL,null,null,70.87,28.92,26.07,58.38,32.31,07B,-20,D+20,D Strong,Democratic,,N,outstate,outstate,St. Louis,Duluth
-20B,20B,mnhouse,20B,MN,Minnesota,David,Bly,DFL,null,null,54.15,45.77,1.16,46.68,45.52,20B,-3,D+3,D Strong,Democratic,open,N,outstate,outstate,Rice,Northfield
-26A,26A,mnhouse,26A,MN,Minnesota,Tina,Liebling,DFL,null,null,59.89,39.98,17.2,53.51,36.31,26A,-7,D+7,D Strong,Democratic,,N,outstate,outstate,Olmsted,Rochester
-27B,27B,mnhouse,27B,MN,Minnesota,Jeanne,Poppe,DFL,null,null,53.61,46.3,-8.54,41.64,50.18,27B,-6,D+6,D Strong,Democratic,,N,outstate,outstate,Mower,Austin
-28A,28A,mnhouse,28A,MN,Minnesota,Gene,Pelowski Jr.,DFL,null,null,63.15,36.72,2.29,46.04,43.75,28A,-13,D+13,D Strong,Democratic,uncontested,N,outstate,outstate,Winona,Winona
-40A,40A,mnhouse,40A,MN,Minnesota,Michael V.,Nelson,DFL,null,null,96.39,0,41.34,67.27,25.93,40A,-48,D+48,D Strong,Democratic,,N,metro,cities,Hennepin,Brooklyn Park
-40B,40B,mnhouse,40B,MN,Minnesota,Debra,Hilstrom,DFL,null,null,69.24,30.24,37.27,64.7,27.43,40B,-18,D+18,D Strong,Democratic,open,N,metro,cities,Hennepin,Brooklyn Center
-41A,41A,mnhouse,41A,MN,Minnesota,Connie,Bernardy,DFL,null,null,60.38,39.43,20.32,55.26,34.94,41A,-9,D+9,D Strong,Democratic,,N,metro,metro,Anoka,Fridley
-43B,43B,mnhouse,43B,MN,Minnesota,Leon,Lillie,DFL,null,null,59.52,40.23,12.88,51.86,38.98,43B,-8,D+8,D Strong,Democratic,,N,metro,metro,Washington,North St. Paul
-45A,45A,mnhouse,45A,MN,Minnesota,Lyndon,Carlson Sr.,DFL,null,null,56.8,42.94,24.34,57.53,33.19,45A,-6,D+6,D Strong,Democratic,,N,metro,cities,Hennepin,Crystal
-45B,45B,mnhouse,45B,MN,Minnesota,Mike,Freiberg,DFL,null,null,68.04,31.65,36.26,63.45,27.19,45B,-15,D+15,D Strong,Democratic,,N,metro,cities,Hennepin,Golden Valley
-46A,46A,mnhouse,46A,MN,Minnesota,Peggy,Flanagan,DFL,null,null,63.85,35.84,40.27,65.8,25.53,46A,-13,D+13,D Strong,Democratic,open,N,metro,cities,Hennepin,St. Louis Park
-46B,46B,mnhouse,46B,MN,Minnesota,Cheryl,Youakim,DFL,null,null,68.67,30.97,44.66,67.71,23.05,46B,-17,D+17,D Strong,Democratic,,N,metro,cities,Hennepin,Hopkins
-50A,50A,mnhouse,50A,MN,Minnesota,Linda,Slocum,DFL,null,null,63.09,36.53,31.66,61.35,29.69,50A,-13,D+13,D Strong,Democratic,open,N,metro,cities,Hennepin,Richfield
-52A,52A,mnhouse,52A,MN,Minnesota,Rick,Hansen,DFL,null,null,63.33,36.55,21.47,55.98,34.51,52A,-11,D+11,D Strong,Democratic,,N,metro,metro,Dakota,South St. Paul
-53A,53A,mnhouse,53A,MN,Minnesota,JoAnn,Ward,DFL,null,null,59.03,40.8,16.79,54.03,37.24,53A,-5,D+5,D Strong,Democratic,open,N,metro,metro,Washington,Woodbury
-59A,59A,mnhouse,59A,MN,Minnesota,Fue,Lee,DFL,null,null,80.62,18.6,64.47,78.07,13.6,59A,-30,D+30,D Strong,Democratic,,N,metro,cities,Hennepin,Minneapolis
-59B,59B,mnhouse,59B,MN,Minnesota,Raymond,Dehn,DFL,null,null,76.56,22.85,65.78,78.69,12.91,59B,-26,D+26,D Strong,Democratic,,N,metro,cities,Hennepin,Minneapolis
-60A,60A,mnhouse,60A,MN,Minnesota,Diane,Loeffler,DFL,null,null,73.55,0,61.29,75.62,14.33,60A,-37,D+37,D Strong,Democratic,,N,metro,cities,Hennepin,Minneapolis
-60B,60B,mnhouse,60B,MN,Minnesota,Ilhan,Omar,DFL,null,null,79.77,19.21,67.03,78.8,11.77,60B,-27,D+27,D Strong,Democratic,open,N,metro,cities,Hennepin,Minneapolis
-61A,61A,mnhouse,61A,MN,Minnesota,Frank,Hornstein,DFL,null,null,79.16,20.53,68.71,80.65,11.94,61A,-28,D+28,D Strong,Democratic,,N,metro,cities,Hennepin,Minneapolis
-61B,61B,mnhouse,61B,MN,Minnesota,Paul,Thissen,DFL,null,null,80.4,19.36,68.2,80.53,12.33,61B,-29,D+29,D Strong,Democratic,open,N,metro,cities,Hennepin,Minneapolis
-62A,62A,mnhouse,62A,MN,Minnesota,Karen,Clark,DFL,null,null,88.26,11.16,75.75,83.24,7.49,62A,-37,D+37,D Strong,Democratic,open,N,metro,cities,Hennepin,Minneapolis
-62B,62B,mnhouse,62B,MN,Minnesota,Susan,Allen,DFL,null,null,98.45,0,78.12,84.95,6.83,62B,-42,D+42,D Strong,Democratic,open,N,metro,cities,Hennepin,Minneapolis
-63A,63A,mnhouse,63A,MN,Minnesota,Jim,Davnie,DFL,null,null,85.3,14.35,70.74,81.27,10.53,63A,-33,D+33,D Strong,Democratic,,N,metro,cities,Hennepin,Minneapolis
-63B,63B,mnhouse,63B,MN,Minnesota,Jean,Wagenius,DFL,null,null,76.19,23.43,54.68,73.09,18.41,63B,-24,D+24,D Strong,Democratic,,N,metro,cities,Hennepin,Minneapolis
-64A,64A,mnhouse,64A,MN,Minnesota,Erin,Murphy,DFL,null,null,79.7,20.03,64.54,77.97,13.43,64A,-27,D+27,D Strong,Democratic,open,N,metro,cities,Ramsey,St. Paul
-64B,64B,mnhouse,64B,MN,Minnesota,Dave,Pinto,DFL,null,null,74.77,25.02,55.28,73.43,18.15,64B,-21,D+21,D Strong,Democratic,,N,metro,cities,Ramsey,St. Paul
-65A,65A,mnhouse,65A,MN,Minnesota,Rena,Moran,DFL,null,null,82.79,16.76,67.92,79.92,12,65A,-32,D+32,D Strong,Democratic,,N,metro,cities,Ramsey,St. Paul
-65B,65B,mnhouse,65B,MN,Minnesota,Carlos,Mariani,DFL,null,null,77.03,22.56,56.11,73.52,17.41,65B,-25,D+25,D Strong,Democratic,,N,metro,cities,Ramsey,St. Paul
-66A,66A,mnhouse,66A,MN,Minnesota,Alice,Hausman,DFL,null,null,68.41,31.45,43.57,67.17,23.6,66A,-15,D+15,D Strong,Democratic,,N,metro,cities,Ramsey,St. Paul
-66B,66B,mnhouse,66B,MN,Minnesota,John,Lesch,DFL,null,null,79.73,19.8,60.16,75.92,15.76,66B,-27,D+27,D Strong,Democratic,,N,metro,cities,Ramsey,St. Paul
-67A,67A,mnhouse,67A,MN,Minnesota,Tim,Mahoney,DFL,null,null,76.34,23.2,48.8,70.18,21.38,67A,-25,D+25,D Strong,Democratic,uncontested,N,metro,cities,Ramsey,St. Paul
-67B,67B,mnhouse,67B,MN,Minnesota,Sheldon,Johnson,DFL,null,null,69.35,24.59,48.15,69.95,21.8,67B,-23,D+23,D Strong,Democratic,open,N,metro,cities,Ramsey,St. Paul
-49A,49A,mnhouse,49A,MN,Minnesota,Dario,Anselmo,DFL,null,null,48.79,51.04,27.29,59.34,32.05,49A,0,EVEN,D Tossup,EVEN,,Y,metro,cities,Hennepin,Edina
-10A,10A,mnhouse,10A,MN,Minnesota,Josh,Heintzeman,GOP,null,null,40.55,59.32,-29.43,31.42,60.85,10A,4,R+4,R Lean,Republican,,N,outstate,outstate,Crow Wing,Nisswa
-05B,05B,mnhouse,05B,MN,Minnesota,Sandy,Layman,DFL,null,null,42.01,53.61,-20.88,35.61,56.49,05B,4,R+4,R Competitive,Republican,,Y,outstate,outstate,Itasca,Balsam Township
-10B,10B,mnhouse,10B,MN,Minnesota,Dale,Lueck,GOP,null,null,36.78,63.13,-31.27,31.22,62.49,10B,9,R+9,R Competitive,Republican,,Y,outstate,outstate,Crow Wing,Aitkin
-11B,11B,mnhouse,11B,MN,Minnesota,Jason,Rarick,GOP,null,null,39.45,60.4,-29.62,31.38,61,11B,7,R+7,R Competitive,Republican,,Y,outstate,outstate,Pine,Pine City
-12A,12A,mnhouse,12A,MN,Minnesota,Jeff,Backer,GOP,null,null,39.46,60.46,-26.43,32.64,59.07,12A,7,R+7,R Competitive,Republican,,Y,outstate,outstate,Stevens,Browns Valley
-17A,17A,mnhouse,17A,MN,Minnesota,Tim,Miller,GOP,null,null,40.91,59.01,-33.24,29.65,62.89,17A,5,R+5,R Competitive,Republican,,Y,outstate,outstate,Renville,Prinsburg
-17B,17B,mnhouse,17B,MN,Minnesota,Dave,Baker,GOP,null,null,40.36,59.51,-22.57,34.69,57.26,17B,6,R+6,R Competitive,Republican,,Y,outstate,outstate,Kandiyohi,Willmar
-21A,21A,mnhouse,21A,MN,Minnesota,Barb,Haley,GOP,null,null,44.88,54.99,-11.15,40.07,51.22,21A,9,R+9,R Competitive,Republican,,Y,outstate,outstate,Wabasha,Red Wing
-24B,24B,mnhouse,24B,MN,Minnesota,Brian,Daniels,GOP,null,null,41.47,58.39,-25.18,33.24,58.42,24B,3,R+3,R Competitive,Republican,,Y,outstate,outstate,Rice,Faribault
-27A,27A,mnhouse,27A,MN,Minnesota,Peggy,Bennett,GOP,null,null,38.21,61.71,-18.19,37.1,55.29,27A,8,R+8,R Competitive,Republican,,Y,outstate,outstate,Freeborn,Albert Lea
-37B,37B,mnhouse,37B,MN,Minnesota,Nolan,West,GOP,null,null,49.52,50.26,-4.26,43.29,47.55,37B,5,R+5,R Competitive,Republican,,Y,metro,metro,Anoka,Blaine
-42A,42A,mnhouse,42A,MN,Minnesota,Randy,Jessup,DFL,null,null,49.64,50.18,14.04,51.94,37.9,42A,1,R+1,R Competitive,Republican,,Y,metro,cities,Ramsey,Shoreview
-44A,44A,mnhouse,44A,MN,Minnesota,Sarah,Anderson,GOP,null,null,45.82,54.04,14.45,52.75,38.3,44A,5,R+5,R Competitive,Republican,,Y,metro,cities,Hennepin,Plymouth
-48A,48A,mnhouse,48A,MN,Minnesota,Laurie,Pryor,DFL,null,null,51.66,48.18,18.83,54.91,36.08,48A,1,R+1,R Competitive,Republican,,Y,metro,cities,Hennepin,Minnetonka
-54B,54B,mnhouse,54B,MN,Minnesota,Tony,Jurgens,GOP,null,null,44.53,55.27,-5.82,42.38,48.2,54B,9,R+9,R Competitive,Republican,,Y,metro,metro,Dakota,Hastings
-56B,56B,mnhouse,56B,MN,Minnesota,Roz,Peterson,GOP,null,null,47.46,52.37,4.69,48.17,43.48,56B,3,R+3,R Competitive,Republican,,Y,metro,metro,Dakota,Lakeville
-57A,57A,mnhouse,57A,MN,Minnesota,Erin,Maye Quade,GOP,null,null,52.23,47.52,6.22,48.54,42.32,57A,3,R+3,R Competitive,Republican,open,Y,metro,metro,Dakota,Apple Valley
-01A,01A,mnhouse,01A,MN,Minnesota,Dan,Fabian,GOP,null,null,25.66,74.24,-36.9,27.7,64.6,01A,20,R+20,R Lean,Republican,,N,outstate,outstate,Roseau,Roseau
-01B,01B,mnhouse,01B,MN,Minnesota,Debra,Kiel,GOP,null,null,35.15,64.75,-29.74,31.25,60.99,01B,11,R+11,R Lean,Republican,,N,outstate,outstate,Polk,Crookston
-02A,02A,mnhouse,02A,MN,Minnesota,Matt,Grossell,GOP,null,null,35.74,63.94,-26.24,33.32,59.56,02A,7,R+7,R Lean,Republican,,N,outstate,outstate,Beltrami,Bemidji
-02B,02B,mnhouse,02B,MN,Minnesota,Steve,Green,GOP,null,null,38.99,60.94,-34.46,29.41,63.87,02B,8,R+8,R Lean,Republican,,N,outstate,outstate,Becker,Fosston
-09A,09A,mnhouse,09A,MN,Minnesota,John,Poston,GOP,null,null,31.31,68.53,-47.03,23.36,70.39,09A,16,R+16,R Lean,Republican,,N,outstate,outstate,Todd,Lake Shore
-13A,13A,mnhouse,13A,MN,Minnesota,Jeff,Howe,GOP,null,null,33.9,66.02,-34.39,29.23,63.62,13A,15,R+15,R Lean,Republican,open,N,outstate,outstate,Stearns,Rockville
-14A,14A,mnhouse,14A,MN,Minnesota,Tama,Theis,GOP,null,null,45.17,54.65,-11.49,39.76,51.25,14A,7,R+7,R Lean,Republican,,N,outstate,outstate,Stearns,St. Cloud
-24A,24A,mnhouse,24A,MN,Minnesota,John,Petersburg,GOP,null,null,43.02,56.87,-23.95,33.43,57.38,24A,7,R+7,R Lean,Republican,,N,outstate,outstate,Steele,Waseca
-36A,36A,mnhouse,36A,MN,Minnesota,Mark,Uglem,GOP,null,null,41.56,58.21,-2.95,43.69,46.64,36A,7,R+7,R Lean,Republican,open,N,metro,cities,Hennepin,Champlin
-39B,39B,mnhouse,39B,MN,Minnesota,Kathy,Lohmer,GOP,null,null,40.92,59.02,-0.28,45.51,45.79,39B,8,R+8,R Lean,Republican,,N,metro,metro,Washington,Stillwater
-53B,53B,mnhouse,53B,MN,Minnesota,Kelly,Fenton,GOP,null,null,43.56,56.35,8.69,50.22,41.53,53B,8,R+8,R Lean,Republican,,N,metro,metro,Washington,Woodbury
-08A,08A,mnhouse,08A,MN,Minnesota,Bud,Nornes,GOP,null,null,34.7,65.19,-31.66,30.84,62.5,08A,16,R+16,R Strong,Republican,,N,outstate,outstate,Otter Tail,Fergus Falls
-08B,08B,mnhouse,08B,MN,Minnesota,Mary,Franson,GOP,null,null,35.02,64.87,-37.67,27.52,65.19,08B,10,R+10,R Strong,Republican,,N,outstate,outstate,Douglas,Alexandria
-09B,09B,mnhouse,09B,MN,Minnesota,Ron,Kresha,GOP,null,null,27.62,72.3,-51.39,21.35,72.74,09B,15,R+15,R Strong,Republican,,N,outstate,outstate,Morrison,Little Falls
-12B,12B,mnhouse,12B,MN,Minnesota,Paul,Anderson,GOP,null,null,0,98.23,-46.6,23.66,70.26,12B,35,R+35,R Strong,Republican,,N,outstate,outstate,Stearns,Starbuck
-13B,13B,mnhouse,13B,MN,Minnesota,Tim,O'Driscoll,GOP,null,null,30.25,69.63,-33.34,29.53,62.87,13B,17,R+17,R Strong,Republican,,N,outstate,outstate,Stearns,Sartell
-15A,15A,mnhouse,15A,MN,Minnesota,Sondra,Erickson,GOP,null,null,36.05,63.69,-39.9,26.46,66.36,15A,11,R+11,R Strong,Republican,,N,outstate,outstate,Mille Lacs,Princeton
-15B,15B,mnhouse,15B,MN,Minnesota,Jim,Newberger,GOP,null,null,31.02,68.88,-49.21,21.79,71,15B,16,R+16,R Strong,Republican,open,N,outstate,outstate,Sherburne,Becker
-16A,16A,mnhouse,16A,MN,Minnesota,Chris,Swedzinski,GOP,null,null,31.81,68.1,-29.27,31.12,60.39,16A,15,R+15,R Strong,Republican,,N,outstate,outstate,Lyon,Ghent
-16B,16B,mnhouse,16B,MN,Minnesota,Paul,Torkelson,GOP,null,null,26.82,73.06,-37.87,26.62,64.49,16B,21,R+21,R Strong,Republican,,N,outstate,outstate,Brown,Hanska
-18A,18A,mnhouse,18A,MN,Minnesota,Dean,Urdahl,GOP,null,null,0,97.81,-37.89,26.69,64.58,18A,31,R+31,R Strong,Republican,,N,outstate,outstate,Meeker,Grove City
-18B,18B,mnhouse,18B,MN,Minnesota,Glenn,Gruenhagen,GOP,null,null,32.08,67.8,-41.54,25.08,66.62,18B,15,R+15,R Strong,Republican,,N,outstate,outstate,McLeod,Glencoe
-20A,20A,mnhouse,20A,MN,Minnesota,Bob,Vogel,GOP,null,null,39.07,60.81,-31.9,30.27,62.17,20A,10,R+10,R Strong,Republican,,N,metro,outstate,Scott,Elko New Market
-21B,21B,mnhouse,21B,MN,Minnesota,Steve,Drazkowski,GOP,null,null,34.66,65.26,-29.96,30.76,60.72,21B,14,R+14,R Strong,Republican,,N,outstate,outstate,Goodhue,Mazeppa
-22A,22A,mnhouse,22A,MN,Minnesota,Joe,Schomacker,GOP,null,null,27.98,71.98,-39.12,26.64,65.76,22A,18,R+18,R Strong,Republican,,N,outstate,outstate,Rock,Luverne
-22B,22B,mnhouse,22B,MN,Minnesota,Rod,Hamilton,GOP,null,null,30.43,69.48,-32.25,30.49,62.74,22B,17,R+17,R Strong,Republican,,N,outstate,outstate,Nobles,Mountain Lake
-23A,23A,mnhouse,23A,MN,Minnesota,Bob,Gunther,GOP,null,null,31.78,68.14,-39.26,26.66,65.92,23A,15,R+15,R Strong,Republican,,N,outstate,outstate,Martin,Fairmont
-23B,23B,mnhouse,23B,MN,Minnesota,Jeremy,Munson,GOP,null,null,32.99,66.91,-26.55,32.43,58.98,23B,36,R+36,R Strong,Republican,,N,outstate,outstate,Watonwan,Vernon Center
-25A,25A,mnhouse,25A,MN,Minnesota,Duane,Quam,GOP,null,null,39.94,59.96,-15.75,36.66,52.41,25A,10,R+10,R Strong,Republican,,N,outstate,outstate,Olmsted,Byron
-26B,26B,mnhouse,26B,MN,Minnesota,Nels,Pierson,GOP,null,null,40.73,59.14,-14.55,38.1,52.65,26B,11,R+11,R Strong,Republican,,N,outstate,outstate,Olmsted,Rochester
-28B,28B,mnhouse,28B,MN,Minnesota,Greg,Davids,GOP,null,null,45.32,54.54,-17.87,37.01,54.88,28B,9,R+9,R Strong,Republican,,N,outstate,outstate,Fillmore,Preston
-29A,29A,mnhouse,29A,MN,Minnesota,Joe,McDonald,GOP,null,null,30.26,69.62,-34.06,28.63,62.69,29A,18,R+18,R Strong,Republican,,N,outstate,outstate,Wright,Delano
-29B,29B,mnhouse,29B,MN,Minnesota,Marion,O'Neill,GOP,null,null,34.35,65.53,-30.47,30.52,60.99,29B,13,R+13,R Strong,Republican,,N,outstate,outstate,Wright,Maple Lake
-30A,30A,mnhouse,30A,MN,Minnesota,Nick,Zerwas,GOP,null,null,31.29,68.58,-30.9,30.24,61.14,30A,19,R+19,R Strong,Republican,,N,outstate,outstate,Sherburne,Elk River
-30B,30B,mnhouse,30B,MN,Minnesota,Eric,Lucero,GOP,null,null,29.7,70.16,-32.49,29.37,61.86,30B,18,R+18,R Strong,Republican,,N,outstate,outstate,Wright,Dayton
-31A,31A,mnhouse,31A,MN,Minnesota,Kurt,Daudt,GOP,null,null,29.47,70.33,-44.84,23.78,68.62,31A,18,R+18,R Strong,Republican,,N,metro,metro,Anoka,Crown
-31B,31B,mnhouse,31B,MN,Minnesota,Cal,Bahr,GOP,null,null,33.41,66.42,-34.51,28.8,63.31,31B,16,R+16,R Strong,Republican,,N,outstate,outstate,Anoka,Cedar
-32A,32A,mnhouse,32A,MN,Minnesota,Brian,Johnson,GOP,null,null,36.79,63,-35.85,27.93,63.78,32A,11,R+11,R Strong,Republican,,N,outstate,outstate,Isanti,Cambridge
-32B,32B,mnhouse,32B,MN,Minnesota,Anne,Neu,GOP,null,null,46.73,53.22,-28.97,31.27,60.24,32B,4,R+4,R Strong,Republican,,N,outstate,outstate,Chisago,Lindstrom
-33A,33A,mnhouse,33A,MN,Minnesota,Jerry,Hertaus,GOP,null,null,32.05,67.76,-16.71,37.33,54.04,33A,17,R+17,R Strong,Republican,,N,metro,cities,Hennepin,Greenfield
-33B,33B,mnhouse,33B,MN,Minnesota,Cindy,Pugh,GOP,null,null,39.51,60.34,0.49,45.48,44.99,33B,10,R+10,R Strong,Republican,,N,metro,cities,Hennepin,Chanhassen
-34A,34A,mnhouse,34A,MN,Minnesota,Joyce,Peppin,GOP,null,null,33.95,65.9,-10.35,40.39,50.74,34A,18,R+18,R Strong,Republican,open,N,metro,cities,Hennepin,Rogers
-34B,34B,mnhouse,34B,MN,Minnesota,Dennis,Smith,GOP,null,null,43.95,55.83,4.26,47.42,43.16,34B,8,R+8,R Strong,Republican,,N,metro,cities,Hennepin,Maple Grove
-35A,35A,mnhouse,35A,MN,Minnesota,Abigail,Whelan,GOP,null,null,38.48,61.35,-15.55,37.43,52.98,35A,15,R+15,R Strong,Republican,open,N,metro,metro,Anoka,Anoka
-35B,35B,mnhouse,35B,MN,Minnesota,Peggy,Scott,GOP,null,null,35.17,64.74,-18.98,36.13,55.11,35B,14,R+14,R Strong,Republican,,N,metro,metro,Anoka,Andover
-38A,38A,mnhouse,38A,MN,Minnesota,Linda,Runbeck,GOP,null,null,38.51,61.4,-10.65,40.01,50.66,38A,12,R+12,R Strong,Republican,,N,metro,metro,Anoka,Circle Pines
-38B,38B,mnhouse,38B,MN,Minnesota,Matt,Dean,GOP,null,null,42.95,56.94,-1.15,44.89,46.04,38B,7,R+7,R Strong,Republican,open,N,metro,cities,Ramsey,Dellwood
-39A,39A,mnhouse,39A,MN,Minnesota,Bob,Dettmer,GOP,null,null,38.48,61.43,-10.63,40.49,51.12,39A,12,R+12,R Strong,Republican,,N,metro,metro,Washington,Forest Lake
-47A,47A,mnhouse,47A,MN,Minnesota,Jim,Nash,GOP,null,null,28.4,71.5,-29.38,31.04,60.42,47A,19,R+19,R Strong,Republican,,N,metro,metro,Carver,Waconia
-47B,47B,mnhouse,47B,MN,Minnesota,Joe,Hoppe,GOP,null,null,37.46,62.47,-2.94,43.67,46.61,47B,33,R+33,R Strong,Republican,open,N,metro,metro,Carver,Chaska
-48B,48B,mnhouse,48B,MN,Minnesota,Jenifer,Loon,GOP,null,null,37.57,62.25,13.35,52.31,38.96,48B,13,R+13,R Strong,Republican,,N,metro,cities,Hennepin,Eden Prairie
-55A,55A,mnhouse,55A,MN,Minnesota,Bob,Loonan,GOP,null,null,43.99,55.78,-4.46,42.97,47.43,55A,8,R+8,R Strong,Republican,open,N,metro,metro,Scott,Shakopee
-55B,55B,mnhouse,55B,MN,Minnesota,Tony,Albright,GOP,null,null,30.79,69.05,-23.34,34.13,57.47,55B,19,R+19,R Strong,Republican,,N,metro,metro,Scott,Prior Lake
-56A,56A,mnhouse,56A,MN,Minnesota,Drew,Christensen,GOP,null,null,43.89,55.96,2.96,46.7,43.74,56A,7,R+7,R Strong,Republican,,N,metro,metro,Scott,Savage
-57B,57B,mnhouse,57B,MN,Minnesota,Anna,Wills,GOP,null,null,46.18,53.66,4.44,47.67,43.23,57B,6,R+6,R Strong,Republican,,N,metro,metro,Dakota,Apple Valley
-58A,58A,mnhouse,58A,MN,Minnesota,Jon,Koznick,GOP,null,null,39.22,60.65,-11.51,39.94,51.45,58A,12,R+12,R Strong,Republican,,N,metro,metro,Dakota,Lakeville
-58B,58B,mnhouse,58B,MN,Minnesota,Pat,Garofalo,GOP,null,null,35.08,64.78,-21.98,34.55,56.53,58B,15,R+15,R Strong,Republican,,N,metro,metro,Dakota,Farmington
-14B,14B,mnhouse,14B,MN,Minnesota,Jim,Knoblach,GOP,null,null,48.55,51.2,-3.37,42.92,46.29,14B,0,EVEN,R Tossup,EVEN,,Y,outstate,outstate,Stearns,St. Cloud
+description,seatName,chamber,seatNum,statePostal,stateName,first,last,party,opponent,opponent_party,watching,last7leg,fipped,dem,gop,margin,clinton,trump,district,score,cpvi,lean,lean2,special_status,region,area,majority_county,from
+01A,01A,mnhouse,01A,MN,Minnesota,Dan,Fabian,GOP,Stephen R. Moeller,DFL,N,RDDRRRR,N,25.66,74.24,-36.9,27.7,64.6,01A,20,R+20,R Lean,Republican,,outstate,outstate,Roseau,Roseau
+01B,01B,mnhouse,01B,MN,Minnesota,Debra,Kiel,GOP,Brent Lindstrom,DFL,N,DDDRRRR,N,35.15,64.75,-29.74,31.25,60.99,01B,11,R+11,R Lean,Republican,,outstate,outstate,Polk,Crookston
+02A,02A,mnhouse,02A,MN,Minnesota,Matt,Grossell,GOP,Michael Northbird,DFL,N,DDDRDRR,N,35.74,63.94,-26.24,33.32,59.56,02A,7,R+7,R Lean,Republican,,outstate,outstate,Beltrami,Bemidji
+02B,02B,mnhouse,02B,MN,Minnesota,Steve,Green,GOP,Karen Branden,DFL,N,DDDRRRR,N,38.99,60.94,-34.46,29.41,63.87,02B,8,R+8,R Lean,Republican,,outstate,outstate,Becker,Fosston
+03A,03A,mnhouse,03A,MN,Minnesota,Rob,Ecklund,DFL,Randy Goutermont,GOP,N,DDDDDDD,N,63.25,36.55,-6.45,42.72,49.17,03A,-13,D+13,D Strong,Democratic,,outstate,outstate,St. Louis,International Falls
+03B,03B,mnhouse,03B,MN,Minnesota,Mary,Murphy,DFL,Keith MacDonald,GOP,N,DDDDDDD,N,59.57,40.32,7.47,49.68,42.21,03B,-10,D+10,D Strong,Democratic,,outstate,outstate,St. Louis,Hermantown
+04A,04A,mnhouse,04A,MN,Minnesota,Ben,Lien,DFL,Jordan Idso,GOP,N,RRRRDDD,N,62.2,37.72,7.19,48.46,41.27,04A,-6,D+6,D Lean,Democratic,rematch,outstate,outstate,Clay,Moorhead
+04B,04B,mnhouse,04B,MN,Minnesota,Paul,Marquart,DFL,Jason Peterson,GOP,Y,DDDDDDD,N,53.85,46.09,-21.59,35.11,56.7,04B,-7,D+7,D Lean,Democratic,,outstate,outstate,Clay,Dilworth
+05A,05A,mnhouse,05A,MN,Minnesota,Matt,Bliss,GOP,John Persell,DFL,N,DDDDDDR,N,45.99,53.88,-12.15,39.2,51.35,05A,1,R+1,D Strong,Republican,rematch,outstate,outstate,Beltrami,Bemidji
+05B,05B,mnhouse,05B,MN,Minnesota,Sandy,Layman,GOP,Pat Medure,DFL,N,DDDRDDR,Y,42.01,53.61,-20.88,35.61,56.49,05B,4,R+4,R Competitive,Republican,,outstate,outstate,Itasca,Balsam Township
+06A,06A,mnhouse,06A,MN,Minnesota,Julie,Sandstede,DFL,Guy Anderson,GOP,N,DDDDDDD,N,58.85,40.76,-3.13,44.23,47.36,06A,-13,D+13,D Strong,Democratic,,outstate,outstate,St. Louis,Hibbing
+06B,06B,mnhouse,06B,MN,Minnesota,Dave,Lislegard,DFL,Skeeter Tomczak,GOP,N,DDDDDDD,N,60.42,39.44,-2.69,44.62,47.31,06B,-12,D+12,D Strong,Democratic,open,outstate,outstate,St. Louis,Virginia
+07A,07A,mnhouse,07A,MN,Minnesota,Jennifer,Schultz,DFL,Dana Krivogorsky,GOP,N,DDDDDDD,N,70.3,29.42,33.46,61.42,27.96,07A,-19,D+19,D Lean,Democratic,,outstate,outstate,St. Louis,Duluth
+07B,07B,mnhouse,07B,MN,Minnesota,Liz,Olson,DFL,Caroline Burley,GOP,N,DDDDDDD,N,70.87,28.92,26.07,58.38,32.31,07B,-20,D+20,D Strong,Democratic,,outstate,outstate,St. Louis,Duluth
+08A,08A,mnhouse,08A,MN,Minnesota,Bud,Nornes,GOP,Brittney Johnson,DFL,N,RRRRRRR,N,34.7,65.19,-31.66,30.84,62.5,08A,16,R+16,R Strong,Republican,,outstate,outstate,Otter Tail,Fergus Falls
+08B,08B,mnhouse,08B,MN,Minnesota,Mary,Franson,GOP,Gail Kulp,DFL,N,RRRRRRR,N,35.02,64.87,-37.67,27.52,65.19,08B,10,R+10,R Strong,Republican,rematch,outstate,outstate,Douglas,Alexandria
+09A,09A,mnhouse,09A,MN,Minnesota,John,Poston,GOP,Alex Hering,DFL,N,DDRRRRR,N,31.31,68.53,-47.03,23.36,70.39,09A,16,R+16,R Lean,Republican,,outstate,outstate,Todd,Lake Shore
+09B,09B,mnhouse,09B,MN,Minnesota,Ron,Kresha,GOP,Stephen Browning,DFL,N,RDRRRRR,N,27.62,72.3,-51.39,21.35,72.74,09B,15,R+15,R Strong,Republican,,outstate,outstate,Morrison,Little Falls
+10A,10A,mnhouse,10A,MN,Minnesota,Josh,Heintzeman,GOP,Dale Menk,DFL,N,RDDDDRR,N,40.55,59.32,-29.43,31.42,60.85,10A,4,R+4,R Lean,Republican,,outstate,outstate,Crow Wing,Nisswa
+10B,10B,mnhouse,10B,MN,Minnesota,Dale,Lueck,GOP,Phil Yetzer,DFL,N,DDDRDRR,N,36.78,63.13,-31.27,31.22,62.49,10B,9,R+9,R Competitive,Republican,,outstate,outstate,Crow Wing,Aitkin
+11A,11A,mnhouse,11A,MN,Minnesota,Mike,Sundin,DFL,Jeff A. Dotseth,GOP,N,DDDDDDD,N,59.68,40.18,1.78,46.53,44.75,11A,-11,D+11,D Lean,Democratic,,outstate,outstate,Carlton,Esko
+11B,11B,mnhouse,11B,MN,Minnesota,Jason,Rarick,GOP,Tim Burkhardt,DFL,N,DDDRDRR,N,39.45,60.4,-29.62,31.38,61,11B,7,R+7,R Competitive,Republican,,outstate,outstate,Pine,Pine City
+12A,12A,mnhouse,12A,MN,Minnesota,Jeff,Backer,GOP,Murray Smart,DFL,N,RDRRRRR,N,39.46,60.46,-26.43,32.64,59.07,12A,7,R+7,R Competitive,Republican,,outstate,outstate,Stevens,Browns Valley
+12B,12B,mnhouse,12B,MN,Minnesota,Paul,Anderson,GOP,Ben Schirmers,DFL,N,RRRRRRR,N,0,98.23,-46.6,23.66,70.26,12B,35,R+35,R Strong,Republican,,outstate,outstate,Stearns,Starbuck
+13A,13A,mnhouse,13A,MN,Minnesota,Lisa,Demuth,GOP,Jim Read,DFL,N,DDDDRRR,N,33.9,66.02,-34.39,29.23,63.62,13A,15,R+15,R Lean,Republican,open,outstate,outstate,Stearns,Rockville
+13B,13B,mnhouse,13B,MN,Minnesota,Tim,O'Driscoll,GOP,Heidi L. Everett,DFL,N,RRRRRRR,N,30.25,69.63,-33.34,29.53,62.87,13B,17,R+17,R Strong,Republican,,outstate,outstate,Stearns,Sartell
+14A,14A,mnhouse,14A,MN,Minnesota,Tama,Theis,GOP,Aric Putnam,DFL,N,RDRRRRR,N,45.17,54.65,-11.49,39.76,51.25,14A,7,R+7,R Lean,Republican,rematch,outstate,outstate,Stearns,St. Cloud
+14B,14B,mnhouse,14B,MN,Minnesota,Jim,Knoblach,GOP,Dan Wolgamott,DFL,N,DDDRDRR,N,48.55,51.2,-3.37,42.92,46.29,14B,0,EVEN,R Tossup,EVEN,,outstate,outstate,Stearns,St. Cloud
+15A,15A,mnhouse,15A,MN,Minnesota,Sondra,Erickson,GOP,Emy Minzel,DFL,N,RRDRRRR,N,36.05,63.69,-39.9,26.46,66.36,15A,11,R+11,R Strong,Republican,,outstate,outstate,Mille Lacs,Princeton
+15B,15B,mnhouse,15B,MN,Minnesota,Shane,Mekeland,GOP,Karla Scapanski,DFL,N,RRRRRRR,N,31.02,68.88,-49.21,21.79,71,15B,16,R+16,R Strong,Republican,open,outstate,outstate,Sherburne,Becker
+16A,16A,mnhouse,16A,MN,Minnesota,Chris,Swedzinski,GOP,Tom Wyatt-Yerka,DFL,N,RRRRRRR,N,31.81,68.1,-29.27,31.12,60.39,16A,15,R+15,R Strong,Republican,,outstate,outstate,Lyon,Ghent
+16B,16B,mnhouse,16B,MN,Minnesota,Paul,Torkelson,GOP,"Marinda ""Mindy"" Kimmel",DFL,N,RRRRRRR,N,26.82,73.06,-37.87,26.62,64.49,16B,21,R+21,R Strong,Republican,,outstate,outstate,Brown,Hanska
+17A,17A,mnhouse,17A,MN,Minnesota,Tim,Miller,GOP,Lyle Koenen,DFL,N,DDDDDRR,N,40.91,59.01,-33.24,29.65,62.89,17A,5,R+5,R Competitive,Republican,,outstate,outstate,Renville,Prinsburg
+17B,17B,mnhouse,17B,MN,Minnesota,Dave,Baker,GOP,Anita Flowe,DFL,N,DDDRDRR,N,40.36,59.51,-22.57,34.69,57.26,17B,6,R+6,R Competitive,Republican,,outstate,outstate,Kandiyohi,Willmar
+18A,18A,mnhouse,18A,MN,Minnesota,Dean,Urdahl,GOP,Justin Vold,DFL,N,RRRRRRR,N,0,97.81,-37.89,26.69,64.58,18A,31,R+31,R Strong,Republican,,outstate,outstate,Meeker,Grove City
+18B,18B,mnhouse,18B,MN,Minnesota,Glenn,Gruenhagen,GOP,Ashley Latzke,DFL,N,RRRRRRR,N,32.08,67.8,-41.54,25.08,66.62,18B,15,R+15,R Strong,Republican,,outstate,outstate,McLeod,Glencoe
+19A,19A,mnhouse,19A,MN,Minnesota,Jeff,Brand,DFL,Kim Spears,GOP,N,DDDDDDD,N,52.68,47.23,-4.07,43.1,47.17,19A,-24,D+24,D Lean,Democratic,open,outstate,outstate,Nicollet,North Mankato
+19B,19B,mnhouse,19B,MN,Minnesota,John (Jack),Considine Jr.,DFL,Joe Steck,GOP,N,DDDDDDD,N,59.55,40.23,7.67,48.18,40.51,19B,-10,D+10,D Lean,Democratic,,outstate,outstate,Blue Earth,Mankato
+20A,20A,mnhouse,20A,MN,Minnesota,Bob,Vogel,GOP,Barbara Dröher Kline,DFL,N,RRRRRRR,N,39.07,60.81,-31.9,30.27,62.17,20A,10,R+10,R Strong,Republican,,metro,outstate,Scott,Elko New Market
+20B,20B,mnhouse,20B,MN,Minnesota,Todd,Lippert,DFL,Josh Gare,GOP,N,RDDDDDD,N,54.15,45.77,1.16,46.68,45.52,20B,-3,D+3,D Strong,Democratic,open,outstate,outstate,Rice,Northfield
+21A,21A,mnhouse,21A,MN,Minnesota,Barb,Haley,GOP,Lori Ann Clark,DFL,N,RDRRRRR,N,44.88,54.99,-11.15,40.07,51.22,21A,9,R+9,R Competitive,Republican,,outstate,outstate,Wabasha,Red Wing
+21B,21B,mnhouse,21B,MN,Minnesota,Steve,Drazkowski,GOP,Jonathan Isenor,DFL,N,RRRRRRR,N,34.66,65.26,-29.96,30.76,60.72,21B,14,R+14,R Strong,Republican,,outstate,outstate,Goodhue,Mazeppa
+22A,22A,mnhouse,22A,MN,Minnesota,Joe,Schomacker,GOP,Maxwell Kaufman,DFL,N,RRRRRRR,N,27.98,71.98,-39.12,26.64,65.76,22A,18,R+18,R Strong,Republican,,outstate,outstate,Rock,Luverne
+22B,22B,mnhouse,22B,MN,Minnesota,Rod,Hamilton,GOP,Cheniqua Johnson,DFL,N,RRRRRRR,N,30.43,69.48,-32.25,30.49,62.74,22B,17,R+17,R Strong,Republican,,outstate,outstate,Nobles,Mountain Lake
+23A,23A,mnhouse,23A,MN,Minnesota,Bob,Gunther,GOP,Heather L. Klassen,DFL,N,RRRRRRR,N,31.78,68.14,-39.26,26.66,65.92,23A,15,R+15,R Strong,Republican,,outstate,outstate,Martin,Fairmont
+23B,23B,mnhouse,23B,MN,Minnesota,Jeremy,Munson,GOP,Jim Grabowska,DFL,N,RRRRRRR,N,32.99,66.91,-26.55,32.43,58.98,23B,36,R+36,R Strong,Republican,,outstate,outstate,Watonwan,Vernon Center
+24A,24A,mnhouse,24A,MN,Minnesota,John,Petersburg,GOP,Joe Heegard,DFL,N,RRDDRRR,N,43.02,56.87,-23.95,33.43,57.38,24A,7,R+7,R Lean,Republican,,outstate,outstate,Steele,Waseca
+24B,24B,mnhouse,24B,MN,Minnesota,Brian,Daniels,GOP,Yvette Marthaler,DFL,N,RDDRDRR,N,41.47,58.39,-25.18,33.24,58.42,24B,3,R+3,R Competitive,Republican,,outstate,outstate,Rice,Faribault
+25A,25A,mnhouse,25A,MN,Minnesota,Duane,Quam,GOP,Jamie Mahlberg,DFL,N,RRRRRRR,N,39.94,59.96,-15.75,36.66,52.41,25A,10,R+10,R Strong,Republican,,outstate,outstate,Olmsted,Byron
+25B,25B,mnhouse,25B,MN,Minnesota,Duane,Sauke,DFL,Kenneth L. Bush,GOP,N,RRDDDDD,N,51.79,48.08,9.91,49.7,39.79,25B,-2,D+2,D Competitive,Democratic,,outstate,outstate,Olmsted,Rochester
+26A,26A,mnhouse,26A,MN,Minnesota,Tina,Liebling,DFL,Paul F. Wilson,GOP,N,DDDDDDD,N,59.89,39.98,17.2,53.51,36.31,26A,-7,D+7,D Strong,Democratic,,outstate,outstate,Olmsted,Rochester
+26B,26B,mnhouse,26B,MN,Minnesota,Nels,Pierson,GOP,Tyrel Clark,DFL,N,RRDRRRR,N,40.73,59.14,-14.55,38.1,52.65,26B,11,R+11,R Strong,Republican,,outstate,outstate,Olmsted,Rochester
+27A,27A,mnhouse,27A,MN,Minnesota,Peggy,Bennett,GOP,Terry Gjersvik,DFL,N,RRDRDRR,N,38.21,61.71,-18.19,37.1,55.29,27A,8,R+8,R Competitive,Republican,,outstate,outstate,Freeborn,Albert Lea
+27B,27B,mnhouse,27B,MN,Minnesota,Jeanne,Poppe,DFL,Christine Green,GOP,N,DDDDDDD,N,53.61,46.3,-8.54,41.64,50.18,27B,-6,D+6,D Strong,Democratic,,outstate,outstate,Mower,Austin
+28A,28A,mnhouse,28A,MN,Minnesota,Gene,Pelowski Jr.,DFL,null,null,N,DDDDDDD,N,63.15,36.72,2.29,46.04,43.75,28A,-13,D+13,D Strong,Democratic,uncontested,outstate,outstate,Winona,Winona
+28B,28B,mnhouse,28B,MN,Minnesota,Greg,Davids,GOP,Thomas Trehus,DFL,N,RDRRRRR,N,45.32,54.54,-17.87,37.01,54.88,28B,9,R+9,R Strong,Republican,rematch,outstate,outstate,Fillmore,Preston
+29A,29A,mnhouse,29A,MN,Minnesota,Joe,McDonald,GOP,Renée Cardarelle,DFL,N,RRRRRRR,N,30.26,69.62,-34.06,28.63,62.69,29A,18,R+18,R Strong,Republican,,outstate,outstate,Wright,Delano
+29B,29B,mnhouse,29B,MN,Minnesota,Marion,O'Neill,GOP,Sharon A. McGinty,DFL,N,RRRRRRR,N,34.35,65.53,-30.47,30.52,60.99,29B,13,R+13,R Strong,Republican,,outstate,outstate,Wright,Maple Lake
+30A,30A,mnhouse,30A,MN,Minnesota,Nick,Zerwas,GOP,Sarah Hamlin,DFL,N,RRRRRRR,N,31.29,68.58,-30.9,30.24,61.14,30A,19,R+19,R Strong,Republican,rematch,outstate,outstate,Sherburne,Elk River
+30B,30B,mnhouse,30B,MN,Minnesota,Eric,Lucero,GOP,Margaret Fernandez,DFL,N,RRRRRRR,N,29.7,70.16,-32.49,29.37,61.86,30B,18,R+18,R Strong,Republican,rematch,outstate,outstate,Wright,Dayton
+31A,31A,mnhouse,31A,MN,Minnesota,Kurt,Daudt,GOP,Brad Brown,DFL,N,RRRRRRR,N,29.47,70.33,-44.84,23.78,68.62,31A,18,R+18,R Strong,Republican,,metro,metro,Anoka,Crown
+31B,31B,mnhouse,31B,MN,Minnesota,Cal,Bahr,GOP,Sue Larson,DFL,N,RRRRRRR,N,33.41,66.42,-34.51,28.8,63.31,31B,16,R+16,R Strong,Republican,rematch,outstate,outstate,Anoka,Cedar
+32A,32A,mnhouse,32A,MN,Minnesota,Brian,Johnson,GOP,Renae Berg,DFL,N,RDRRRRR,N,36.79,63,-35.85,27.93,63.78,32A,11,R+11,R Strong,Republican,,outstate,outstate,Isanti,Cambridge
+32B,32B,mnhouse,32B,MN,Minnesota,Anne,Neu,GOP,Jeff Peterson,DFL,N,RRDRRRR,N,46.73,53.22,-28.97,31.27,60.24,32B,4,R+4,R Strong,Republican,,outstate,outstate,Chisago,Lindstrom
+33A,33A,mnhouse,33A,MN,Minnesota,Jerry,Hertaus,GOP,Norrie Thomas,DFL,N,RRRRRRR,N,32.05,67.76,-16.71,37.33,54.04,33A,17,R+17,R Strong,Republican,rematch,metro,cities,Hennepin,Greenfield
+33B,33B,mnhouse,33B,MN,Minnesota,Cindy,Pugh,GOP,Kelly Morrison,DFL,N,RRRRRRR,N,39.51,60.34,0.49,45.48,44.99,33B,10,R+10,R Strong,Republican,,metro,cities,Hennepin,Chanhassen
+34A,34A,mnhouse,34A,MN,Minnesota,Kristin,Robbins,GOP,Dan Solon ,DFL,N,RRRRRRR,N,33.95,65.9,-10.35,40.39,50.74,34A,18,R+18,R Strong,Republican,open,metro,cities,Hennepin,Rogers
+34B,34B,mnhouse,34B,MN,Minnesota,Dennis,Smith,GOP,Kristin Bahner,DFL,N,RRRRRRR,N,43.95,55.83,4.26,47.42,43.16,34B,8,R+8,R Strong,Republican,rematch,metro,cities,Hennepin,Maple Grove
+35A,35A,mnhouse,35A,MN,Minnesota,John,Heinrich,GOP,Bill Vikander,DFL,N,RRRRRRR,N,38.48,61.35,-15.55,37.43,52.98,35A,15,R+15,R Strong,Republican,open,metro,metro,Anoka,Anoka
+35B,35B,mnhouse,35B,MN,Minnesota,Peggy,Scott,GOP,Kathryn Eckhardt,DFL,N,RRRRRRR,N,35.17,64.74,-18.98,36.13,55.11,35B,14,R+14,R Strong,Republican,,metro,metro,Anoka,Andover
+36A,36A,mnhouse,36A,MN,Minnesota,Bill,Maresh,GOP,Zack Stephenson,DFL,N,DDDDRRR,N,41.56,58.21,-2.95,43.69,46.64,36A,7,R+7,R Lean,Republican,open,metro,cities,Hennepin,Champlin
+36B,36B,mnhouse,36B,MN,Minnesota,Melissa,Hortman,DFL,Jermain A Botsio,GOP,N,RDDDDDD,N,55.66,44.11,11.98,51.72,39.74,36B,-4,D+4,D Lean,Democratic,,metro,cities,Hennepin,Brooklyn Park
+37A,37A,mnhouse,37A,MN,Minnesota,Erin,Koegel,DFL,Anthony Wilder,GOP,Y,DDDDDDD,N,47.17,44.49,-0.67,44.95,45.62,37A,-2,D+2,D Lean,Democratic,rematch,metro,metro,Anoka,Coon Rapids
+37B,37B,mnhouse,37B,MN,Minnesota,Nolan,West,GOP,Amir Joseph Malik,DFL,N,RDRRRRR,N,49.52,50.26,-4.26,43.29,47.55,37B,5,R+5,R Competitive,Republican,,metro,metro,Anoka,Blaine
+38A,38A,mnhouse,38A,MN,Minnesota,Linda,Runbeck,GOP,Kevin Fogarty,DFL,N,RRRRRRR,N,38.51,61.4,-10.65,40.01,50.66,38A,12,R+12,R Strong,Republican,rematch,metro,metro,Anoka,Circle Pines
+38B,38B,mnhouse,38B,MN,Minnesota,Patti,Anderson,GOP,Ami Wazlawik,DFL,Y,RRRRRRR,N,42.95,56.94,-1.15,44.89,46.04,38B,7,R+7,R Strong,Republican,open,metro,cities,Ramsey,Dellwood
+39A,39A,mnhouse,39A,MN,Minnesota,Bob,Dettmer,GOP,Ann Mozey,DFL,N,RRRRRRR,N,38.48,61.43,-10.63,40.49,51.12,39A,12,R+12,R Strong,Republican,,metro,metro,Washington,Forest Lake
+39B,39B,mnhouse,39B,MN,Minnesota,Kathy,Lohmer,GOP,Shelly Christensen,DFL,N,RDDRRRR,N,40.92,59.02,-0.28,45.51,45.79,39B,8,R+8,R Lean,Republican,,metro,metro,Washington,Stillwater
+40A,40A,mnhouse,40A,MN,Minnesota,Michael V.,Nelson,DFL,David True,GOP,N,DDDDDDD,N,96.39,0,41.34,67.27,25.93,40A,-48,D+48,D Strong,Democratic,,metro,cities,Hennepin,Brooklyn Park
+40B,40B,mnhouse,40B,MN,Minnesota,Samantha,Vang,DFL,Robert Marvin,GOP,N,DDDDDDD,N,69.24,30.24,37.27,64.7,27.43,40B,-18,D+18,D Strong,Democratic,open,metro,cities,Hennepin,Brooklyn Center
+41A,41A,mnhouse,41A,MN,Minnesota,Connie,Bernardy,DFL,Susan A. Erickson,GOP,N,DDDDDDD,N,60.38,39.43,20.32,55.26,34.94,41A,-9,D+9,D Strong,Democratic,,metro,metro,Anoka,Fridley
+41B,41B,mnhouse,41B,MN,Minnesota,Mary,Kunesh-Podein,DFL,null,null,N,DDDDDDD,N,63.24,36.5,32.65,61.46,28.81,41B,-13,D+13,D Lean,Democratic,uncontested,metro,cities,Ramsey,Columbia Heights
+42A,42A,mnhouse,42A,MN,Minnesota,Randy,Jessup,DFL,Kelly Moller,GOP,N,RDDRDDR,Y,49.64,50.18,14.04,51.94,37.9,42A,1,R+1,R Competitive,Republican,,metro,cities,Ramsey,Shoreview
+42B,42B,mnhouse,42B,MN,Minnesota,Jamie,Becker-Finn,DFL,Yele-Mis Yang,GOP,N,DDDDDDD,N,56.9,42.92,20.46,55.45,34.99,42B,-5,D+5,D Lean,Democratic,,metro,cities,Ramsey,Shoreview
+43A,43A,mnhouse,43A,MN,Minnesota,Peter,Fischer,DFL,"Robert J. ""Bob"" Cardinal",GOP,N,DDDDDDD,N,54.95,44.84,15.69,53.42,37.73,43A,-2,D+2,D Lean,Democratic,rematch,metro,cities,Ramsey,Maplewood
+43B,43B,mnhouse,43B,MN,Minnesota,Leon,Lillie,DFL,Rachael Bucholz,GOP,N,DDDDDDD,N,59.52,40.23,12.88,51.86,38.98,43B,-8,D+8,D Strong,Democratic,,metro,metro,Washington,North St. Paul
+44A,44A,mnhouse,44A,MN,Minnesota,Sarah,Anderson,GOP,Ginny Klevorn,DFL,Y,RRRRRRR,Y,45.82,54.04,14.45,52.75,38.3,44A,5,R+5,R Competitive,Republican,rematch,metro,cities,Hennepin,Plymouth
+44B,44B,mnhouse,44B,MN,Minnesota,Patty,Acomb,DFL,Gary Porter,GOP,N,RRDRDDD,N,54.89,44.89,21.64,56.57,34.93,44B,-3,D+3,D Lean,Democratic,open,metro,cities,Hennepin,Minnetonka
+45A,45A,mnhouse,45A,MN,Minnesota,Lyndon,Carlson Sr.,DFL,Reid Johnson,GOP,N,DDDDDDD,N,56.8,42.94,24.34,57.53,33.19,45A,-6,D+6,D Strong,Democratic,,metro,cities,Hennepin,Crystal
+45B,45B,mnhouse,45B,MN,Minnesota,Mike,Freiberg,DFL,Steve Merriman,GOP,N,DDDDDDD,N,68.04,31.65,36.26,63.45,27.19,45B,-15,D+15,D Strong,Democratic,,metro,cities,Hennepin,Golden Valley
+46A,46A,mnhouse,46A,MN,Minnesota,Ryan,Winkler,DFL,Luke McCusker,GOP,N,DDDDDDD,N,63.85,35.84,40.27,65.8,25.53,46A,-13,D+13,D Strong,Democratic,open,metro,cities,Hennepin,St. Louis Park
+46B,46B,mnhouse,46B,MN,Minnesota,Cheryl,Youakim,DFL,Melissa Moore,GOP,N,DDDDDDD,N,68.67,30.97,44.66,67.71,23.05,46B,-17,D+17,D Strong,Democratic,,metro,cities,Hennepin,Hopkins
+47A,47A,mnhouse,47A,MN,Minnesota,Jim,Nash,GOP,Madalynn Gerold,DFL,N,RRRRRRR,N,28.4,71.5,-29.38,31.04,60.42,47A,19,R+19,R Strong,Republican,,metro,metro,Carver,Waconia
+47B,47B,mnhouse,47B,MN,Minnesota,Greg,Boe,GOP,Donzel Leggett,DFL,N,RRRRRRR,N,37.46,62.47,-2.94,43.67,46.61,47B,33,R+33,R Strong,Republican,open,metro,metro,Carver,Chaska
+48A,48A,mnhouse,48A,MN,Minnesota,Laurie,Pryor,DFL,Ellen Cousins,GOP,N,RDDRDDD,N,51.66,48.18,18.83,54.91,36.08,48A,1,R+1,R Competitive,Republican,,metro,cities,Hennepin,Minnetonka
+48B,48B,mnhouse,48B,MN,Minnesota,Jenifer,Loon,GOP,Carlie Kotyza-Witthuhn,DFL,N,RRRRRRR,N,37.57,62.25,13.35,52.31,38.96,48B,13,R+13,R Strong,Republican,,metro,cities,Hennepin,Eden Prairie
+49A,49A,mnhouse,49A,MN,Minnesota,Dario,Anselmo,GOP,Heather Edelson,DFL,N,RRRRDDR,Y,48.79,51.04,27.29,59.34,32.05,49A,0,EVEN,D Tossup,EVEN,,metro,cities,Hennepin,Edina
+49B,49B,mnhouse,49B,MN,Minnesota,Steve,Elkins,DFL,Matt Sikich,GOP,N,RRDRDDD,N,55.38,44.39,19.91,55.83,35.92,49B,-2,D+2,D Lean,Democratic,open,metro,cities,Hennepin,Edina
+50A,50A,mnhouse,50A,MN,Minnesota,Michael,Howard,DFL,Kirsten Johnson,GOP,N,DDDDDDD,N,63.09,36.53,31.66,61.35,29.69,50A,-13,D+13,D Strong,Democratic,open,metro,cities,Hennepin,Richfield
+50B,50B,mnhouse,50B,MN,Minnesota,Andrew,Carlson,DFL,Chad Anderson,GOP,N,DDDDDRD,Y,53.54,46.2,19.03,54.96,35.93,50B,-7,D+7,D Competitive,Democratic,rematch,metro,cities,Hennepin,Bloomington
+51A,51A,mnhouse,51A,MN,Minnesota,Sandra,Masin,DFL,Jim Kiner,GOP,N,RDDRDDD,N,57.64,41.99,16.99,53.83,36.84,51A,-4,D+4,D Lean,Democratic,,metro,metro,Dakota,Eagan
+51B,51B,mnhouse,51B,MN,Minnesota,Laurie,Halverson,DFL,Douglas D. Willetts,GOP,N,RRDRDDD,N,56.5,43.35,16.89,53.47,36.58,51B,-2,D+2,D Lean,Democratic,,metro,metro,Dakota,Eagan
+52A,52A,mnhouse,52A,MN,Minnesota,Rick,Hansen,DFL,Beth L. Arntson,GOP,N,DDDDDDD,N,63.33,36.55,21.47,55.98,34.51,52A,-11,D+11,D Strong,Democratic,,metro,metro,Dakota,South St. Paul
+52B,52B,mnhouse,52B,MN,Minnesota,Regina,Barr,DFL,Ruth Richardson,GOP,Y,DDDDDDR,Y,49.62,50.17,7.78,49.35,41.57,52B,-6,D+6,D Competitive,Democratic,,metro,metro,Dakota,Inver Grove Heights
+53A,53A,mnhouse,53A,MN,Minnesota,Tou,Xiong,DFL,Andy Turonie,GOP,N,DDDDDDD,N,59.03,40.8,16.79,54.03,37.24,53A,-5,D+5,D Strong,Democratic,open,metro,metro,Washington,Woodbury
+53B,53B,mnhouse,53B,MN,Minnesota,Kelly,Fenton,GOP,Steve Sandell,DFL,N,RRDRRRR,N,43.56,56.35,8.69,50.22,41.53,53B,8,R+8,R Lean,Republican,,metro,metro,Washington,Woodbury
+54A,54A,mnhouse,54A,MN,Minnesota,Keith,Franke,GOP,Anne Claflin,DFL,Y,DDDRDDR,Y,48.46,51.43,3.25,46.43,43.18,54A,-1,D+1,D Lean,Democratic,,metro,metro,Washington,St. Paul Park
+54B,54B,mnhouse,54B,MN,Minnesota,Tony,Jurgens,GOP,Tina Folch,DFL,N,RRRRRRR,N,44.53,55.27,-5.82,42.38,48.2,54B,9,R+9,R Competitive,Republican,,metro,metro,Dakota,Hastings
+55A,55A,mnhouse,55A,MN,Minnesota,Erik,Mortensen,GOP,Brad Tabke,DFL,N,RRRRRRR,N,43.99,55.78,-4.46,42.97,47.43,55A,8,R+8,R Strong,Republican,open,metro,metro,Scott,Shakopee
+55B,55B,mnhouse,55B,MN,Minnesota,Tony,Albright,GOP,Matt Christensen,DFL,N,RRRRRRR,N,30.79,69.05,-23.34,34.13,57.47,55B,19,R+19,R Strong,Republican,,metro,metro,Scott,Prior Lake
+56A,56A,mnhouse,56A,MN,Minnesota,Drew,Christensen,GOP,Hunter Cantrell,DFL,N,RRRRRRR,N,43.89,55.96,2.96,46.7,43.74,56A,7,R+7,R Strong,Republican,,metro,metro,Scott,Savage
+56B,56B,mnhouse,56B,MN,Minnesota,Roz,Peterson,GOP,Alice Mann,DFL,Y,RRRRDRR,N,47.46,52.37,4.69,48.17,43.48,56B,3,R+3,R Competitive,Republican,,metro,metro,Dakota,Lakeville
+57A,57A,mnhouse,57A,MN,Minnesota,Matt,Lundin,GOP,Robert Bierman,DFL,N,RRRRRRD,Y,52.23,47.52,6.22,48.54,42.32,57A,3,R+3,R Competitive,Republican,open,metro,metro,Dakota,Apple Valley
+57B,57B,mnhouse,57B,MN,Minnesota,Anna,Wills,GOP,John Huot,DFL,N,RRDRRRR,N,46.18,53.66,4.44,47.67,43.23,57B,6,R+6,R Strong,Republican,rematch,metro,metro,Dakota,Apple Valley
+58A,58A,mnhouse,58A,MN,Minnesota,Jon,Koznick,GOP,Maggie Williams,DFL,N,RRRRRRR,N,39.22,60.65,-11.51,39.94,51.45,58A,12,R+12,R Strong,Republican,,metro,metro,Dakota,Lakeville
+58B,58B,mnhouse,58B,MN,Minnesota,Pat,Garofalo,GOP,Marla Vagts,DFL,N,RRRRRRR,N,35.08,64.78,-21.98,34.55,56.53,58B,15,R+15,R Strong,Republican,rematch,metro,metro,Dakota,Farmington
+59A,59A,mnhouse,59A,MN,Minnesota,Fue,Lee,DFL,Fred Statema,GOP,N,DDDDDDD,N,80.62,18.6,64.47,78.07,13.6,59A,-30,D+30,D Strong,Democratic,,metro,cities,Hennepin,Minneapolis
+59B,59B,mnhouse,59B,MN,Minnesota,Raymond,Dehn,DFL,Lacy Johnson,GOP,N,DDDDDDD,N,76.56,22.85,65.78,78.69,12.91,59B,-26,D+26,D Strong,Democratic,,metro,cities,Hennepin,Minneapolis
+60A,60A,mnhouse,60A,MN,Minnesota,Diane,Loeffler,DFL,Kelly Winsor,GOP,N,DDDDDDD,N,73.55,0,61.29,75.62,14.33,60A,-37,D+37,D Strong,Democratic,,metro,cities,Hennepin,Minneapolis
+60B,60B,mnhouse,60B,MN,Minnesota,Mohamud,Noor,DFL,Joseph Patiño,GOP,N,DDDDDDD,N,79.77,19.21,67.03,78.8,11.77,60B,-27,D+27,D Strong,Democratic,open,metro,cities,Hennepin,Minneapolis
+61A,61A,mnhouse,61A,MN,Minnesota,Frank,Hornstein,DFL,Jeremy Hansen,GOP,N,DDDDDDD,N,79.16,20.53,68.71,80.65,11.94,61A,-28,D+28,D Strong,Democratic,,metro,cities,Hennepin,Minneapolis
+61B,61B,mnhouse,61B,MN,Minnesota,Paul,Thissen,DFL,Scot D. Missling,GOP,N,DDDDDDD,N,80.4,19.36,68.2,80.53,12.33,61B,-29,D+29,D Strong,Democratic,,metro,cities,Hennepin,Minneapolis
+62A,62A,mnhouse,62A,MN,Minnesota,Hodan,Hassan,DFL,Bruce Lundeen,GOP,N,DDDDDDD,N,88.26,11.16,75.75,83.24,7.49,62A,-37,D+37,D Strong,Democratic,open,metro,cities,Hennepin,Minneapolis
+62B,62B,mnhouse,62B,MN,Minnesota,Aisha,Gomez,DFL,Ronald W. Peterson,GOP,N,DDDDDDD,N,98.45,0,78.12,84.95,6.83,62B,-42,D+42,D Strong,Democratic,open,metro,cities,Hennepin,Minneapolis
+63A,63A,mnhouse,63A,MN,Minnesota,Jim,Davnie,DFL,Kyle Bragg,GOP,N,DDDDDDD,N,85.3,14.35,70.74,81.27,10.53,63A,-33,D+33,D Strong,Democratic,,metro,cities,Hennepin,Minneapolis
+63B,63B,mnhouse,63B,MN,Minnesota,Jean,Wagenius,DFL,Frank Pafko,GOP,N,DDDDDDD,N,76.19,23.43,54.68,73.09,18.41,63B,-24,D+24,D Strong,Democratic,,metro,cities,Hennepin,Minneapolis
+64A,64A,mnhouse,64A,MN,Minnesota,Kaohly,Her,DFL,Patrick JD Griffin,GOP,N,DDDDDDD,N,79.7,20.03,64.54,77.97,13.43,64A,-27,D+27,D Strong,Democratic,open,metro,cities,Ramsey,St. Paul
+64B,64B,mnhouse,64B,MN,Minnesota,Dave,Pinto,DFL,Alex Pouliot,GOP,N,DDDDDDD,N,74.77,25.02,55.28,73.43,18.15,64B,-21,D+21,D Strong,Democratic,,metro,cities,Ramsey,St. Paul
+65A,65A,mnhouse,65A,MN,Minnesota,Rena,Moran,DFL,Monique Giordan,GOP,N,DDDDDDD,N,82.79,16.76,67.92,79.92,12,65A,-32,D+32,D Strong,Democratic,,metro,cities,Ramsey,St. Paul
+65B,65B,mnhouse,65B,MN,Minnesota,Carlos,Mariani,DFL,Margaret Mary Stokely,GOP,N,DDDDDDD,N,77.03,22.56,56.11,73.52,17.41,65B,-25,D+25,D Strong,Democratic,,metro,cities,Ramsey,St. Paul
+66A,66A,mnhouse,66A,MN,Minnesota,Alice,Hausman,DFL,Jon Heyer,GOP,N,DDDDDDD,N,68.41,31.45,43.57,67.17,23.6,66A,-15,D+15,D Strong,Democratic,,metro,cities,Ramsey,St. Paul
+66B,66B,mnhouse,66B,MN,Minnesota,John,Lesch,DFL,David E. Richard,GOP,N,DDDDDDD,N,79.73,19.8,60.16,75.92,15.76,66B,-27,D+27,D Strong,Democratic,,metro,cities,Ramsey,St. Paul
+67A,67A,mnhouse,67A,MN,Minnesota,Tim,Mahoney,DFL,null,null,N,DDDDDDD,N,76.34,23.2,48.8,70.18,21.38,67A,-25,D+25,D Strong,Democratic,uncontested,metro,cities,Ramsey,St. Paul
+67B,67B,mnhouse,67B,MN,Minnesota,Jay,Xiong,DFL,Fred Turk,GOP,N,DDDDDDD,N,69.35,24.59,48.15,69.95,21.8,67B,-23,D+23,D Strong,Democratic,open,metro,cities,Ramsey,St. Paul

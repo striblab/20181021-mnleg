@@ -3,6 +3,7 @@ import * as d3 from 'd3';
 import * as d3tooltip from 'd3-tooltip';
 import * as topojson from 'topojson';
 import mnleg from '../sources/mnleg.json';
+import mn from '../sources/mncd.json';
 import axis from '../sources/axis.json';
 
 class Map {
@@ -99,11 +100,13 @@ class Map {
             .on("mouseover", function(d) {
                 var string;
                 var status;
+                var opponent = "";
                 for (var i = 0; i < data.length; i++) {
                     if (d.properties.DISTRICT == data[i].seatName) {
+                        opponent = "<div>vs. " + data[i].opponent + " (" + data[i].opponent_party + ")</div>";
                         status = data[i].first + " " + data[i].last + " (" + data[i].party + ")";
                         if (data[i].special_status == "open") { status = "Open Seat"; }
-                        string = "<div class='districtName'>District " + data[i].seatName + "</div><div>" + status + "</div><div class='" + self.colorScale(data[i].lean) + "'>" + data[i].cpvi + "</div>";
+                        string = "<div class='districtName'>District " + data[i].seatName + "</div><div>" + status + "</div>" + opponent + "<div class='" + self.colorScale(data[i].lean) + "'>" + data[i].cpvi + "</div>";
                         break;
                     }
                 }
@@ -122,6 +125,24 @@ class Map {
 
         $(".tooltip").attr('style', 'font-family: "Benton Sans", Helvetica, Arial, sans-serif; background-color: #ffffff !important; height: auto !important; width: auto !important; color:#000000 !important; padding: 10px !important; opacity:1 !important; border-radius: 0 !important; border: 1px solid #000000 !important; font-size: 13px !important;');
         $(".tooltip").addClass("thisTip");
+
+        //Draw congressional district borders
+        g.append('g')
+        .attr('class', 'cds')
+        .selectAll('path')
+        .data(topojson.feature(mn, mn.objects.mncd).features)
+        .enter().append('path')
+        .attr('d', path)
+        .attr('class', function(d) {
+            return 'cd CD' + d.properties.DISTRICT;
+        })
+        .attr('id', function(d) {
+            return 'P' + d.properties.DISTRICT;
+        })
+        .style("fill-opacity",0)
+        .style('stroke-width', '1px')
+        .style('stroke', '#333333');
+
 
         var aspect = 500 / 550,
             chart = $(self.target + " svg");
