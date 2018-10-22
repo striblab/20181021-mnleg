@@ -63,15 +63,16 @@ h2 {
 
 // base dataviz styles
 .slide {
-  width:800px;
+  width:600px;
   margin-left:auto;
   margin-right:auto;
+
   .adjust {
       min-height:60px;
  }
   .district:hover {
       opacity:0.8;
-      cursor:pointer;
+      cursor:default;
  }
   .grid {
       display:inline-block;
@@ -137,8 +138,12 @@ h2 {
       opacity: 1 !important;
       stroke-width: 2px !important;
  }
- #approvalSpill, .columnHead {
+ #approvalSpill, .columnHead, .pollstack {
     text-align:center;
+    pointer-events:none;
+}
+.approval {
+    font-weight:bold;
 }
   .powerline {
       stroke-dasharray: 5, 5;
@@ -184,9 +189,6 @@ h2 {
       text-align:center;
       font-size:0.7em;
  }
-  #chartAxis {
-      height:500px !important;
- }
   .brick {
       width:4px;
       height:30px;
@@ -219,7 +221,7 @@ h2 {
  }
   .table .column {
       display:inline-block;
-      width:20%;
+      width:30%;
  }
   .table .row {
       width:100%;
@@ -278,7 +280,7 @@ h2 {
       text-align:center;
  }
   #chartApproval .column {
-      width:15%;
+      width:25%;
       display:inline-block;
       text-align:center;
  }
@@ -293,18 +295,6 @@ h2 {
  }
   #swingChart img {
       width:100%;
- }
-  .tooltip {
-      font-family: "Benton Sans", Helvetica, Arial, sans-serif;
-      background-color: white;
-      height: auto;
-      width: auto;
-      padding: 10px;
-      border-radius: 0;
-      opacity:1 !important;
-      border: 1px solid black;
-      font-size: 13px;
-      font-family: Arial;
  }
   .row {
       display:inline-block;
@@ -897,7 +887,7 @@ h2 {
       font-family: "Benton Sans", Helvetica, Arial, sans-serif;
       background-color: white;
       height: auto;
-      width: auto;
+      width: 150px !important;
       padding: 10px;
       border-radius: 0;
       border: 1px solid black;
@@ -913,7 +903,7 @@ h2 {
  }
   .states path:hover {
       fill: #333 !important;
-      cursor: pointer;
+      cursor: default;
  }
   .chart {
       font-family: "Benton Sans", Helvetica, Arial, sans-serif;

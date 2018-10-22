@@ -70,7 +70,7 @@ function chartBuilder() {
                 if (d.x == '2016') {
                     return 6;
                 } else {
-                    return 0;
+                    return 2;
                 }
             }
         },
@@ -286,16 +286,16 @@ function chartPoll(container, data) {
         .html(function(d) {
 
             var color = "r4";
-            var color2 = "green3";
+            var color2 = "#5BBF48";
 
             if (d.party == "D") {
                 color = "d4";
             }
             if (d.approval < 0.50) {
-                color2 = "orange3";
+                color2 = "#E07242";
             }
 
-            return '<div class="column prez ' + color + '">' + d.president + ' ' + d.year + '</div><div class="column ' + color2 + '">' + d3.format(".0%")(d.approval) + '</div><div class="column chartCol ' + color + '">' + d3.format("+")(d.mnhouse_loss) + '</div>';
+            return '<div class="column prez ' + color + '">' + d.president + ' ' + d.year + '</div><div class="column approval" style="color:' + color2 + ';">' + d3.format(".0%")(d.approval) + '</div><div class="column chartCol ' + color + '">' + d.party + d3.format("+")(d.mnhouse_loss) + '</div>';
         });
 
 }
