@@ -182,9 +182,9 @@ chartBuilder();
 var data = rankings.scores;
 var colorScale = d3.scaleOrdinal()
     .domain(["D Tossup", "D Competitive", "D Lean", "D Strong", "R Tossup", "R Competitive", "R Lean", "R Strong"])
-    .range(["d1", "d2", "d3", "d4", "r1", "r2", "r3", "r4"]);
+    .range(["d1", "d1", "d1", "d1", "r1", "r1", "r1", "r1"]);
 
-function chamberGrid(target, data, party, lean, index) {
+function chamberGrid(target, data, party, lean, index, tier, first) {
     d3.helper = {};
 
     d3.helper.tooltip = function(accessor) {
@@ -223,16 +223,56 @@ function chamberGrid(target, data, party, lean, index) {
         };
     };
 
-    var dataFiltered = data.filter(function(d) {
-        return (d.party == party) && (d.lean == lean)
-    }).sort(function(a, b) {
-        return d3['descending'](a.score, b.score);
+    //figure out the race counts
+    var dataWatching = data.filter(function(d) {
+        return (d.party == party) && (d.watching == "Y")
     });
 
-    $("#" + party + index).html(dataFiltered.length)
+    var dataParty = data.filter(function(d) {
+        return (d.party == party)
+    });
 
-    d3.select(target).selectAll(".seat")
-        .data(dataFiltered).enter().append("div")
+    //populate the balance of power bars
+    if (party == "GOP") {
+        $(".bigBar .rfade").text(dataParty.length - dataWatching.length);
+        $(".bigBar .rfade").css("width", d3.format("%")((dataParty.length - dataWatching.length) / 134));
+        $(".bigBar .rstrong").text(dataWatching.length);
+        $(".bigBar .rstrong").css("width", d3.format("%")((dataWatching.length) / 134));
+    } else {
+        $(".bigBar .dfade").text(dataParty.length - dataWatching.length);
+        $(".bigBar .dfade").css("width", d3.format("%")((dataParty.length - dataWatching.length) / 134));
+        $(".bigBar .dstrong").text(dataWatching.length);
+        $(".bigBar .dstrong").css("width", d3.format("%")((dataWatching.length) / 134));
+    }
+
+    //filter the data based on party and lean
+    var dataFiltered = data.filter(function(d) {
+            return (d.party == party && d.lean == lean);
+        }).sort(function(a, b) {
+
+            if (party == "GOP") { return d3['ascending'](a.margin, b.margin); }
+            else { return d3['descending'](a.margin, b.margin); }
+    });
+
+    //build the grid
+    // for (var j=0; j < 5; j++) {
+
+    d3.select(target).html("");
+        
+    d3.select(target).selectAll(".seat" + first)
+        .data(dataFiltered.filter(function(d) {
+            // var multiplier;
+            // if (tier == "pos") { multiplier = 1; }
+            // else if (tier == "neg") {  multiplier = -1; }
+
+            // var percentile = (j * 10) * multiplier;
+            // var ceiling = percentile + (10 * multiplier);
+
+            if (tier == "pos") {return (d.margin > 0); }
+            else if (tier == "neg") {return (d.margin < 0); }
+        }))
+        .enter()
+        .append("div")
         .attr("id", function(d) {
             return "d" + d.district;
         })
@@ -241,7 +281,17 @@ function chamberGrid(target, data, party, lean, index) {
             // d3.select(this).classed("selected",true);
         })
         .attr("class", function(d) {
-            return colorScale(lean) + " seat";
+            var color = "";
+            
+            if (d.party == "GOP" && d.watching == "Y") { color = "r4"; }
+            else if (d.party == "GOP") { color = "r1"; }
+            else if (d.party == "DFL" && d.watching == "Y") { color = "d4"; }
+            else if (d.party == "DFL") { color = "d1"; }
+
+            // if (d.special_status == "open" && d.party == "DFL") { color = "blue2"; }
+            // else if (d.special_status == "open" && d.party == "GOP") { color = "red1"; }
+
+            return color + " seat seat" + first;
         })
         .html(function(d) {
             return d.district;
@@ -250,23 +300,29 @@ function chamberGrid(target, data, party, lean, index) {
             var status = d.first + " " + d.last + " (" + d.party + ")";
             var opponent = "<div>vs. " + d.opponent + " (" + d.opponent_party + ")</div>";
             if (d.opponent == "null") { opponent = ""; }
-            if (d.special_status == "open") { status = "Open Seat"; }
-            return "<div class='districtName'>District " + d.seatName + "</div><div>" + status + "</div>" + opponent + "<div class='" + colorScale(lean) + "'>" + d.cpvi + "</div>";
+            // if (d.special_status == "open") { status = "Open Seat"; }
+            return "<div class='districtName'>District " + d.seatName + "</div><div>" + status + "</div>" + opponent + "<div class='" + colorScale(lean) + "'>" + d.cpvi + "</div><div>" + d.from + ", " + d.majority_county + "</div><div>Trump margin: " + d3.format("+.0f")(d.margin) + "%</div><div class='legendary gray3'>" + data[i].special_status + "</div>";
         }));
+
+    // }
 
 }
 
-chamberGrid("#rGrid .blocks1", data, "GOP", "R Tossup", 1);
-chamberGrid("#dGrid .blocks1", data, "DFL", "D Tossup", 1);
+chamberGrid("#tier1", data, "DFL", "D Strong", 3, "pos", 6);
+chamberGrid("#tier2", data, "DFL", "D Lean", 2, "pos", 7);
+chamberGrid("#tier3", data, "DFL", "D Competitive", 1, "pos", 8);
+chamberGrid("#tier6", data, "DFL", "D Competitive", 1, "neg", 9);
+chamberGrid("#tier5", data, "DFL", "D Lean", 2, "neg", 10);
+chamberGrid("#tier4", data, "DFL", "D Strong", 3, "neg", 11);
 
-chamberGrid("#rGrid .blocks2", data, "GOP", "R Competitive", 2);
-chamberGrid("#dGrid .blocks2", data, "DFL", "D Competitive", 2);
 
-chamberGrid("#rGrid .blocks3", data, "GOP", "R Lean", 3);
-chamberGrid("#dGrid .blocks3", data, "DFL", "D Lean", 3);
+chamberGrid("#tier12", data, "GOP", "R Strong", 3, "pos", 0);
+chamberGrid("#tier11", data, "GOP", "R Lean", 2, "pos", 1);
+chamberGrid("#tier10", data, "GOP", "R Competitive", 1, "pos", 2);
+chamberGrid("#tier7", data, "GOP", "R Competitive", 1, "neg", 3);
+chamberGrid("#tier8", data, "GOP", "R Lean", 2, "neg", 4);
+chamberGrid("#tier9", data, "GOP", "R Strong", 3, "neg", 5);
 
-chamberGrid("#rGrid .blocks4", data, "GOP", "R Strong", 4);
-chamberGrid("#dGrid .blocks4", data, "DFL", "D Strong", 4);
 
 // render district map
 var map = new Map("#map");

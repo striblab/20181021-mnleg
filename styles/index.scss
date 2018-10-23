@@ -42,6 +42,14 @@ $selector-wrapper: '.strib-styles.ssa.ssb.ssc';
 #d3-tooltip-0 {
   display: none;
 }
+.districtName {
+  font-weight:bold;
+}
+.gray3 {
+  fill: #969696;
+  background-color: #969696;
+  stroke: #969696 !important;
+}
 .legendary {
   padding:4px;
   font-family: "Benton Sans", Helvetica, Arial, sans-serif;
@@ -160,4 +168,10 @@ $selector-wrapper: '.strib-styles.ssa.ssb.ssc';
   pointer-events: all;
   font-weight: bold;
   stroke:#3f88c5;
+}
+
+@media (max-width:520px) {
+  #d3-tooltip-0, .tooltip {
+      display:none !important;
+ }
 }

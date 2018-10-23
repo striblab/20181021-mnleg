@@ -106,7 +106,7 @@ class Map {
                         opponent = "<div>vs. " + data[i].opponent + " (" + data[i].opponent_party + ")</div>";
                         status = data[i].first + " " + data[i].last + " (" + data[i].party + ")";
                         if (data[i].special_status == "open") { status = "Open Seat"; }
-                        string = "<div class='districtName'>District " + data[i].seatName + "</div><div>" + status + "</div>" + opponent + "<div class='" + self.colorScale(data[i].lean) + "'>" + data[i].cpvi + "</div>";
+                        string = "<div class='districtName'>District " + data[i].seatName + "</div><div>" + status + "</div>" + opponent + "<div class='" + self.colorScale(data[i].lean) + "'>" + data[i].cpvi + "</div><div>" + data[i].from + ", " + data[i].majority_county + "</div><div>Trump margin: " + d3.format("+.0f")(data[i].margin) + "%</div><div>" + data[i].special_status + "</div>";
                         break;
                     }
                 }

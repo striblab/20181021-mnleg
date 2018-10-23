@@ -43,11 +43,11 @@
     window.Bugsnag = { use: function() { }};
     window.FeatureAPI_JS_TipsNavigation = false
   </script><!-- Shared styles --><link href="http://www.startribune.com/vendor/css/startribune.css?d=1536872939230" rel="stylesheet" type="text/css"><!-- Desktop assets -->
-    <link href="http://assets.startribune.com/static/css/screen.css?d=1540244218319" rel="stylesheet" type="text/css">
+    <link href="http://assets.startribune.com/static/css/screen.css?d=1540333520249" rel="stylesheet" type="text/css">
 
-    <script src="http://assets.startribune.com/static/vendor/jquery/dist/jquery.min.js?d=1540244218319"></script>
-    <script src="http://assets.startribune.com/static/min/header.min.js?d=1540244218319"></script>
-    <script src="http://assets.startribune.com/static/min/footer.min.js?d=1540244218319"></script><!-- Shared scripts --><script src="http://www.startribune.com/vendor/js/shims.js?d=1540244218319"></script><!-- <script src="http://www.startribune.com/vendor/js/bugsnag.js?d=1536872939230"></script> --><script src="http://www.startribune.com/vendor/js/startribune.js?d=1540244218319"></script>
+    <script src="http://assets.startribune.com/static/vendor/jquery/dist/jquery.min.js?d=1540333520249"></script>
+    <script src="http://assets.startribune.com/static/min/header.min.js?d=1540333520249"></script>
+    <script src="http://assets.startribune.com/static/min/footer.min.js?d=1540333520249"></script><!-- Shared scripts --><script src="http://www.startribune.com/vendor/js/shims.js?d=1540333520249"></script><!-- <script src="http://www.startribune.com/vendor/js/bugsnag.js?d=1536872939230"></script> --><script src="http://www.startribune.com/vendor/js/startribune.js?d=1540333520249"></script>
 
 		<style>
 			
@@ -147,13 +147,13 @@
       <!-- share -->
     </div>
     <section class="container-lg leadin">
-      <p>Republicans have a chance to fully control Minnesota's government – including the governorship, Minnesota House of Representitives and Minnesota Senate – for the first time in 40 years this November.</p>
+      <p>Republicans have a chance to Republicans Minnesota's government – including the governorship, Minnesota House of Representitives and Minnesota Senate – for the first time in 40 years this November.</p>
 
-      <p>The GOP already has slim majorities in the state's legislative chambers: by 10 seats in the House and one in the Senate.</p>
+      <p>The GOP already has slim majorities in the state's legislative chambers: by 20 seats in the House and one in the Senate.</p>
 
-      <p>But control of the Legislature tends to blow with the up-ballot winds, due in large part to a couple dozen swing seats in greater Minnesota and the Twin Cities suburbs.</p>
+      <p>But control of the Legislature tends to blow with the up-ballot winds, due in large part to a dozen swing seats in greater Minnesota and the Twin Cities suburbs.</p>
       
-      <p>During presidential election years, the winner's party tends to ride those victorious coattails to a legislative majority. Inversely, midterms usually result in backlashes against the majority party and the pendulum swings back the other way.</p>
+      <p>During presidential election years, the winner's party tends to ride victorious coattails to a legislative majority. Inversely, midterms usually result in backlashes against the majority party and the pendulum swings back the other way.</p>
     </section>
 
       <!-- MNHOUSE SWINGS -->
@@ -165,7 +165,7 @@
       <section class="container-lg">
         <p>This gives hope to Democrats, as November's midterm could be positioned to follow past trends since the <span class="d4 legendary">DFL</span> only needs to flip 11 seats from <span class="r3 legendary">GOP</span> control to retake the House.</p>
 
-        <p>As for the Minnesota Senate, there's only one special race this year, in District 13 betwee Jeff Howe (R) and Joe Perske (DFL) to fill the vacancy left by outgoing Lt. Gov. Michelle Fischbach (R) and decide which party breaks the 33-to-33 tie and controls the chamber.</p>
+        <p>As for the Minnesota Senate, there's only one special race this year, in District 13 betwee Jeff Howe (R) and Joe Perske (DFL) to fill the vacancy left by outgoing Lt. Gov. Michelle Fischbach (R) and decide which party breaks the 33-to-33 tie and takes the chamber.</p>
   
         <p>The Star Tribune has analyzed these races and isolated which contests to watch most closely on Election Night.</p>
       </section>
@@ -177,59 +177,79 @@
 
         <p>Polling is rare in Minnesota's legislative contests, so a combination of measures are needed to isolate how competitive each race is.</p>
 
-        <p>By one measure, 14 out of 17 competitive seats are held by the GOP, according to a Star Tribune analysis using the Cook Partisan Voting Index (CPVI), which rates each district's political lean and competitiveness.</p>
+        <p>Using data from past elections, a Star Tribune analysis shows seven DFL-held seats in districts won by Donald Trump in 2016, versus 10 GOP-held seats in districts won by Hillary Clinton.</p>
+
       </section>
   
       <!-- MNHOUSE CHAMBER -->
       <div class="slide" id="mnaxis">
+          <div class="axisLabel"><span class="d4 legendary">⇦ More Democratic</span> | <span class="r3 legendary">More Republican ⇨</span></div>
+
+          <p></p>
+          <!-- <div id="trumpAxis">
+              <div>⇦ Trump margin ⇨</div>
+          </div> -->
         <div class="chart" id="chartLeans">
-            <div class="grid" id="dGrid">
-             <div class="focused">
-              <div class="bar bar1"><span id="DFL1" class="count"></span> - DFL Tossup</div>
-              <div class="blocks blocks1"></div>
-  
-              <div class="bar bar2"><span id="DFL2" class="count"></span>  - DFL Competitive</div>
-              <div class="blocks blocks2 adjust"></div>
-            </div>
-  
-              <div class="bar bar3"><span id="DFL3" class="count"></span> - DFL Likely</div>
-              <div class="blocks blocks3 adjust"></div>
-  
-              <div class="bar bar4"><span id="DFL4" class="count"></span>  - DFL Solid</div>
-              <div class="blocks blocks4"></div>
-            </div>
-            <div class="grid" id="rGrid">
-              <div class="focused">
-               <div class="bar bar1"><span id="GOP1" class="count"></span>  - GOP Tossup</div>
-               <div class="blocks blocks1"></div>
-  
-               <div class="bar bar2"><span id="GOP2" class="count"></span>  - GOP Competitive</div>
-               <div class="blocks blocks2 adjust"></div>
+            <div class="grid rightAlign" id="dGrid">
+              <div class="blocks blocks1">
+                <div class="tScore1 pos">
+                    <div id="tier1" class="cpvi3 tri"></div>
+                    <div id="tier2" class="cpvi2 tri"></div>
+                    <div id="tier3" class="cpvi1 tri"></div>
+                </div>
+                <div class="tScore1 neg">
+                    <div id="tier4" class="cpvi3 tri"></div>
+                    <div id="tier5" class="cpvi2 tri"></div>
+                    <div id="tier6" class="cpvi1 tri"></div>
+                </div>  
               </div>
-  
-              <div class="bar bar3"><span id="GOP3" class="count"></span>  - GOP Likely</div>
-              <div class="blocks blocks3 adjust"></div>
-  
-              <div class="bar bar4"><span id="GOP4" class="count"></span>  - GOP Solid</div>
-              <div class="blocks blocks4"></div>
             </div>
+
+            <div class="grid leftAlign" id="rGrid">
+                <div class="blocks blocks1">
+                    <div class="tScore1 neg">
+                        <div id="tier7" class="cpvi1 tri"></div>
+                        <div id="tier8" class="cpvi2 tri"></div>
+                        <div id="tier9" class="cpvi3 tri"></div>
+                    </div>  
+                    <div class="tScore1 pos">
+                        <div id="tier10" class="cpvi1 tri"></div>
+                        <div id="tier11" class="cpvi2 tri"></div>
+                        <div id="tier12" class="cpvi3 tri"></div>
+                    </div>
+                  </div>
+            </div>
+
+            <!-- <div id="cpviAxis">
+                <div class="axisMark leftAlign"></div><div class="axisMark leftAlign"></div><div class="axisMark centerAlign">EVEN</div><div class="axisMark rightAlign"></div><div class="axisMark rightAlign"></div>
+            </div> -->
         </div>
-  
+
+        <p></p>
+
+        <div class="bigBar chart">
+            <div class="mainbar leftAlign">DFL Likely</div><div class="mainbar rightAlign">DFL Watching     </div><div class="mainbar">GOP Watching</div><div class="mainbar rightAlign">GOP Likely</div>
+
+            <div class="dfade mainbar leftAlign">0</div><div class="dstrong mainbar rightAlign">0</div><div class="rstrong mainbar leftAlign">0</div><div class="rfade mainbar rightAlign">0</div>
+          </div>
+
         <div class="byline">Source: Minnesota Secretary of State, The Cook Political Report | Graphic by <a href="http://www.startribune.com/jeff-hargarten/274254381/" target="new_">Jeff Hargarten, Star Tribune</a></div>
       </div>
         
   
       <section class="container-lg">
-          <p>CPVI was developed by The Cook Political Report to score political lean of U.S. House races by comparing the average party votes of the past two presidential elections to district-level election results.</p>
+          <p>An additional five GOP seats are hotly contested for other reasons, along with one other DFL seat.</p>
 
-          <p>Additionally, there are 23 open seats in the chamber where incumbents are not seeking reelection, several rematches of 2016 races and a handful of uncontested districts.</p>
+          <p>Part of these ratings includes using the Cook Partisan Voting Index (CPVI), which rates each district's political lean and competitiveness. CPVI was developed by The Cook Political Report to score political lean of U.S. House races by comparing the average party votes of the past two presidential elections to district-level election results.</p>
+
+          <p>Another part includes rating races based on the margins President Trump won or lost by in 2016, along with whether the district is one of 23 open seats where incumbents are not seeking reelection, or one of several rematches between the same candidates from two years ago.</p>
       </section>
   
       <!-- MAP -->
       <div class="rule"></div>
       <section class="container-lg">
         <h2 class="chartTitle">Watching the rural and suburban votes</h2>
-        <p>Minnesota's urban/rural political divide became even more geographically pronounced after 2016.</p>
+        <p>Geography also matters in these races, especially since Minnesota's urban/rural political divide became even more pronounced after 2016's election.</p>
   
         <p>Districts in Minnesota's Iron Range and Southern Minnesota — traditionally Democratic strongholds — voted overwhelmingly for Donald Trump in 2016. Inversely, many suburban districts that often vote Republican were won by Hillary Clinton by significant margins.</p>
 
@@ -237,6 +257,11 @@
       </section>
   
       <div class="slide" id="mnswing">
+          <div class="bigBar chart">
+              <div class="mainbar leftAlign">DFL Likely</div><div class="mainbar rightAlign">DFL Watching     </div><div class="mainbar">GOP Watching</div><div class="mainbar rightAlign">GOP Likely</div>
+  
+              <div class="dfade mainbar">0</div><div class="dstrong mainbar">0</div><div class="rstrong mainbar">0</div><div class="rfade mainbar">0</div>
+            </div>
           <div id="map" class="map"><svg width="320" height="350" viewBox="0 0 500 550" preserveAspectRatio="xMidYMid"></svg></div>
           <div class="byline">Source: Minnesota Secretary of State, The Cook Political Report | Graphic by <a href="http://www.startribune.com/jeff-hargarten/274254381/" target="new_">Jeff Hargarten, Star Tribune</a></div>
       </div>

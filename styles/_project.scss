@@ -76,9 +76,58 @@ h2 {
  }
   .grid {
       display:inline-block;
-      width:48%;
+      width:49%;
       vertical-align:top;
  }
+ #trumpAxis {
+    vertical-align:top;
+     text-align:center;
+     width:100%;
+     float:right;
+     font-size:0.8em;
+     padding:10px;
+     -webkit-transform: scaleX(-1);
+     transform: rotate(90deg);
+     transform-origin: left top 0;
+ }
+ #chartLeans {
+    width:100%;
+ }
+ #rGrid {
+     border-left:2px solid #ffffff;
+ }
+ #dGrid {
+    border-right:2px solid #ffffff;
+}
+.tri {
+    display:inline-block;
+    width:32%;
+}
+
+#dGrid .pos {
+    border-bottom: 2px solid #333333;
+}
+
+#rGrid .pos {
+    border-top: 2px solid #333333;
+}
+
+#rGrid .pos .tri {
+    vertical-align: top;
+}
+
+.neg .tri {
+    vertical-align:top;
+}
+
+#dGrid .pos .tri {
+    vertical-align: bottom;
+}
+
+#rGrid .neg .tri {
+    vertical-align: bottom;
+}
+
  .focused {
      background-color:#eeeeee;
  }
@@ -110,18 +159,58 @@ h2 {
       margin-right:auto;
  }
   .seat {
-      width:28px;
-      height:28px;
+      width:30px;
+      height:30px;
       display:inline-block;
       border:1px solid white;
-      padding:6px 8px 5px 2px;
+      font-size:0.9em;
  }
+
+ #dGrid .seat {
+    padding:6px 4px 6px 2px;
+ }
+
+ #rGrid .seat {
+    padding:6px 4px 6px 4px;
+ }
+
   .seat:hover {
       opacity:0.8;
       cursor:default;
  }
-  .districtName {
-      font-weight:bold;
+ #cpviAxis {
+     width:100%;
+ }
+ .axisMark { 
+     display:inline-block;
+     width:20%;
+     padding:10px;
+}
+.rightAlign {
+    text-align:right;
+}
+.centerAlign {
+    text-align:center;
+}
+.leftAlign {
+    text-align:left;
+}
+ .bigBar {
+     text-align:left;
+ }
+ .bigBar .dstrong, .bigBar .dfade {
+    padding:10px;
+    font-size:2em;
+    height:50px;
+}
+.bigBar .rstrong, .bigBar .rfade {
+    padding:10px;
+    font-size:2em;
+    height:50px;
+}
+ .mainbar {
+     display:inline-block;
+     width:24.6%;
  }
  .cds {
      pointer-events:none !important;
@@ -149,13 +238,13 @@ h2 {
 .approval {
     font-weight:bold;
 }
-  .powerline {
+.powerline {
       stroke-dasharray: 5, 5;
       stroke: #333;
- }
-  #chartHouseRace {
+}
+#chartHouseRace {
       font-size:0.9em;
- }
+}
   #chartCD .adjacent {
       font-size:1.5em;
  }
@@ -496,6 +585,8 @@ h2 {
   .red1 {
       fill: #F2AC93;
       background-color: #F2AC93;
+      color:#ffffff;
+      font-weight:bold;
  }
   .red2 {
       fill: #F28670;
@@ -542,10 +633,14 @@ h2 {
   .blue1 {
       fill: #D1E6E1;
       background-color: #D1E6E1;
+      color:#ffffff;
+      font-weight:bold;
  }
   .blue2 {
       fill: #A7E6E3;
       background-color: #A7E6E3;
+      color:#ffffff;
+      font-weight:bold;
  }
   .blue3 {
       fill: #67B4C2;
