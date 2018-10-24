@@ -1,6 +1,5 @@
 import 'intersection-observer';
 import * as d3 from 'd3';
-import * as d3tooltip from 'd3-tooltip';
 import * as topojson from 'topojson';
 import mnleg from '../sources/mnleg.json';
 import mn from '../sources/mncd.json';
@@ -53,9 +52,44 @@ class Map {
 
         var svg = d3.select(self.target + " svg").attr("width", width).attr("height", height);
         var g = svg.append("g");
-        var tooltip = d3tooltip(d3);
 
-        // self._render_legend();
+        d3.helper = {};
+
+        d3.helper.tooltip = function(accessor) {
+            return function(selection) {
+                var tooltipDiv;
+                var bodyNode = d3.select('body').node();
+                selection.on("mouseover", function(d, i) {
+                        // Clean up lost tooltips
+                        d3.select('body').selectAll('div.tooltip').remove();
+                        // Append tooltip
+                        tooltipDiv = d3.select('body').append('div').attr('class', 'tooltip');
+                        var absoluteMousePos = d3.mouse(bodyNode);
+                        tooltipDiv.style('left', (absoluteMousePos[0] + 10) + 'px')
+                            .style('top', (absoluteMousePos[1] - 15) + 'px')
+                            .style('position', 'absolute')
+                            .style('z-index', 1001);
+                        // Add text using the accessor function
+                        var tooltipText = accessor(d, i) || '';
+                        // Crop text arbitrarily
+                        //tooltipDiv.style('width', function(d, i){return (tooltipText.length > 80) ? '300px' : null;})
+                        //    .html(tooltipText);
+                    })
+                    .on('mousemove', function(d, i) {
+                        // Move tooltip
+                        var absoluteMousePos = d3.mouse(bodyNode);
+                        tooltipDiv.style('left', (absoluteMousePos[0] + 10) + 'px')
+                            .style('top', (absoluteMousePos[1] - 15) + 'px');
+                        var tooltipText = accessor(d, i) || '';
+                        tooltipDiv.html(tooltipText);
+                    })
+                    .on("mouseout", function(d, i) {
+                        // Remove tooltip
+                        tooltipDiv.remove();
+                    });
+    
+            };
+        };
 
         // Only fire resize events in the event of a width change because it prevents
         // an awful mobile Safari bug and developer rage blackouts.
@@ -97,34 +131,21 @@ class Map {
                 }
                 return self.colorScale(lean) + " district " + d.properties.seatName;;
             })
-            .on("mouseover", function(d) {
+            .call(d3.helper.tooltip(function(d, i) {
                 var string;
                 var status;
                 var opponent = "";
                 for (var i = 0; i < data.length; i++) {
                     if (d.properties.DISTRICT == data[i].seatName) {
                         opponent = "<div>vs. " + data[i].opponent + " (" + data[i].opponent_party + ")</div>";
-                        status = data[i].first + " " + data[i].last + " (" + data[i].party + ")";
-                        if (data[i].special_status == "open") { status = "Open Seat"; }
-                        string = "<div class='districtName'>District " + data[i].seatName + "</div><div>" + status + "</div>" + opponent + "<div class='" + self.colorScale(data[i].lean) + "'>" + data[i].cpvi + "</div><div>" + data[i].from + ", " + data[i].majority_county + "</div><div>Trump margin: " + d3.format("+.0f")(data[i].margin) + "%</div><div>" + data[i].special_status + "</div>";
+                        status = data[i].first + " " + data[i].last + data[i].incumbent + " (" + data[i].party + ")";
+                        // if (data[i].special_status == "open") { status = "Open Seat"; }
+                        string = "<div class='districtName'>District " + data[i].seatName + "</div><div>" + status + "</div>" + opponent + "<div class='tipCat'>CPVI</div><div>" + data[i].cpvi + "</div><div><div class='tipCat'>Current member from</div>" + data[i].from + "</div><div><div class='tipCat'>Trump margin</div>" + d3.format("+.0f")(data[i].margin) + "%</div><div class='tipCat'>Special status</div><div>" + data[i].special_status + "</div>";
                         break;
                     }
                 }
-
-                tooltip.html(string);
-                $(".d3-tooltip").show();
-                tooltip.show();
-            })
-            .on("mouseout", function(d) {
-                tooltip.hide()
-            });
-
-        $("svg").mouseleave(function() {
-            $(".d3-tooltip").hide();
-        });
-
-        $(".tooltip").attr('style', 'font-family: "Benton Sans", Helvetica, Arial, sans-serif; background-color: #ffffff !important; height: auto !important; width: auto !important; color:#000000 !important; padding: 10px !important; opacity:1 !important; border-radius: 0 !important; border: 1px solid #000000 !important; font-size: 13px !important;');
-        $(".tooltip").addClass("thisTip");
+                return string;
+            }));
 
         //Draw congressional district borders
         g.append('g')

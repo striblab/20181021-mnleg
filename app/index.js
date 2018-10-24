@@ -288,8 +288,15 @@ function chamberGrid(target, data, party, lean, index, tier, first) {
             else if (d.party == "DFL" && d.watching == "Y") { color = "d4"; }
             else if (d.party == "DFL") { color = "d1"; }
 
-            // if (d.special_status == "open" && d.party == "DFL") { color = "blue2"; }
-            // else if (d.special_status == "open" && d.party == "GOP") { color = "red1"; }
+            if (d.special_status == "open" && d.party == "DFL" && d.watching == "Y") { color = "stripe-d-open-y"; }
+            else if (d.special_status == "open" && d.party == "GOP" && d.watching == "Y") { color = "stripe-r-open-y"; }
+            else if (d.special_status == "open" && d.party == "DFL" && d.watching == "N") { color = "stripe-d-open-n"; }
+            else if (d.special_status == "open" && d.party == "GOP" && d.watching == "N") { color = "stripe-r-open-n"; }
+
+            if (d.special_status == "rematch" && d.party == "DFL" && d.watching == "Y") { color = "stripe-d-rematch-y"; }
+            else if (d.special_status == "rematch" && d.party == "GOP" && d.watching == "Y") { color = "stripe-r-rematch-y"; }
+            else if (d.special_status == "rematch" && d.party == "DFL" && d.watching == "N") { color = "stripe-d-rematch-n"; }
+            else if (d.special_status == "rematch" && d.party == "GOP" && d.watching == "N") { color = "stripe-r-rematch-n"; }
 
             return color + " seat seat" + first;
         })
@@ -297,11 +304,10 @@ function chamberGrid(target, data, party, lean, index, tier, first) {
             return d.district;
         })
         .call(d3.helper.tooltip(function(d, i) {
-            var status = d.first + " " + d.last + " (" + d.party + ")";
+            var status = d.first + " " + d.last + d.incumbent + " (" + d.party + ")";
             var opponent = "<div>vs. " + d.opponent + " (" + d.opponent_party + ")</div>";
             if (d.opponent == "null") { opponent = ""; }
-            // if (d.special_status == "open") { status = "Open Seat"; }
-            return "<div class='districtName'>District " + d.seatName + "</div><div>" + status + "</div>" + opponent + "<div class='" + colorScale(lean) + "'>" + d.cpvi + "</div><div>" + d.from + ", " + d.majority_county + "</div><div>Trump margin: " + d3.format("+.0f")(d.margin) + "%</div><div class='legendary gray3'>" + data[i].special_status + "</div>";
+            return "<div class='districtName'>District " + d.seatName + "</div><div>" + status + "</div>" + opponent + "<div class='tipCat'>CPVI</div><div>" + d.cpvi + "</div><div><div class='tipCat'>Current member from</div>" + d.from + "</div><div><div class='tipCat'>Trump margin</div>" + d3.format("+.0f")(d.margin) + "%</div><div class='tipCat'>Special status</div><div>" + d.special_status + "</div>";
         }));
 
     // }

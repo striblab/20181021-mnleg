@@ -45,10 +45,20 @@ $selector-wrapper: '.strib-styles.ssa.ssb.ssc';
 .districtName {
   font-weight:bold;
 }
+.tipCat {
+  font-weight:bold;
+  margin-top:4px;
+  text-decoration:underline;
+}
 .gray3 {
   fill: #969696;
   background-color: #969696;
   stroke: #969696 !important;
+}
+.gray2 {
+  fill: #CCC;
+  background-color: #CCC;
+  stroke: #CCC !important;
 }
 .legendary {
   padding:4px;
@@ -174,4 +184,8 @@ $selector-wrapper: '.strib-styles.ssa.ssb.ssc';
   #d3-tooltip-0, .tooltip {
       display:none !important;
  }
+  section.container-lg {
+    width:100%;
+    max-width:100%;
+  }
 }
