@@ -942,31 +942,31 @@
          font-weight:bold;
          color:#ffffff;
          pointer-events:all !important;
-         background: repeating-linear-gradient( 45deg, #ABCEE8, #ABCEE8 7px, #333333 7px, #333333 14px );
+         background: repeating-linear-gradient( 45deg, #ABCEE8, #ABCEE8 7px, #555555 7px, #555555 14px );
     }
      .stripe-r-rematch-n {
          font-weight:bold;
          color:#ffffff;
          pointer-events:all !important;
-         background: repeating-linear-gradient( 45deg, #C68985, #C68985 7px, #333333 7px, #333333 14px );
+         background: repeating-linear-gradient( 45deg, #C68985, #C68985 7px, #555555 7px, #555555 14px );
     }
      .stripe-d-rematch-y {
          font-weight:bold;
          color:#ffffff;
          pointer-events:all !important;
-         background: repeating-linear-gradient( 45deg, #3F88C5, #3F88C5 7px, #333333 7px, #333333 14px );
+         background: repeating-linear-gradient( 45deg, #3F88C5, #3F88C5 7px, #555555 7px, #555555 14px );
     }
      .stripe-r-rematch-y {
          font-weight:bold;
          color:#ffffff;
          pointer-events:all !important;
-         background: repeating-linear-gradient( 45deg, #8C1B17, #8C1B17 7px, #333333 7px, #333333 14px );
+         background: repeating-linear-gradient( 45deg, #8C1B17, #8C1B17 7px, #555555 7px, #555555 14px );
     }
      .stripe-rematch {
          font-weight:bold;
          color:#ffffff;
          pointer-events:all !important;
-         background: repeating-linear-gradient( 45deg, #bbbbbb, #bbbbbb 7px, #333333 7px, #333333 14px );
+         background: repeating-linear-gradient( 45deg, #bbbbbb, #bbbbbb 6px, #555555 6px, #555555 14px );
     }
     /*BLIND SAFE DIVERGENCE RAMP*/
      .negDark {
@@ -1421,8 +1421,10 @@
 /*-- Tooltip --*/
  .c3-tooltip-container {
      z-index: 10;
+     pointer-events: none; 
 }
  .c3-tooltip {
+     pointer-events: none; 
      border-collapse: collapse;
      border-spacing: 0;
      background-color: #fff;
