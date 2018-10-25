@@ -17,7 +17,7 @@ class Map {
             .domain(["D Tossup", "D Competitive", "D Lean", "D Strong", "R Tossup", "R Competitive", "R Lean", "R Strong"])
             .range(["dstrong", "dstrong", "dfade", "dfade", "rstrong", "rstrong", "rfade", "rfade"]);
         // this.colorScale = d3.scaleOrdinal()
-        // .domain(["GOP", "DFL"])
+        // .domain(["R", "DFL"])
         // .range(['#C0272D',"#0258A0"]);
     }
 
@@ -117,9 +117,9 @@ class Map {
                 var lean;
                 for (var i = 0; i < data.length; i++) {
                     if (d.properties.DISTRICT == data[i].seatName) {
-                        if (data[i].party == "GOP" && data[i].watching == "N") {
+                        if (data[i].party == "R" && data[i].watching == "N") {
                             lean = "R Strong";
-                        } else if (data[i].party == "GOP" && data[i].watching == "Y") {
+                        } else if (data[i].party == "R" && data[i].watching == "Y") {
                             lean = "R Tossup";
                         } else if (data[i].party == "DFL" && data[i].watching == "N") {
                             lean = "D Strong";

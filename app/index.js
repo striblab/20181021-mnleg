@@ -165,7 +165,7 @@ function chartBuilder() {
         tooltip: {
             contents: function(d, defaultTitleFormat, defaultValueFormat, color) {
                 console.log(d);
-                return '<div class="chart-tooltip gray3"><span class="tooltip-label">' + d[1].x + '</span></div><div class="chart-tooltip r4"><span class="tooltip-label">' + d[0].id + ':</span>' +
+                return '<div class="chart-tooltip gray3"><span class="tooltip-label">' + d[1].x + '</span></div><div class="chart-tooltip r4"><span class="tooltip-label">' + d[1].id + ':</span>' +
                     '<span class="tooltip-value">' + defaultValueFormat(d[1].value) + '</span>' +
                     '</div><div class="chart-tooltip d4">' +
                     '<span class="tooltip-label">' + d[0].id + ':</span>' +
@@ -233,7 +233,7 @@ function chamberGrid(target, data, party, lean, index, tier, first) {
     });
 
     //populate the balance of power bars
-    if (party == "GOP") {
+    if (party == "R") {
         $(".bigBar .rfade").text(dataParty.length - dataWatching.length);
         $(".bigBar .rfade").css("width", d3.format("%")((dataParty.length - dataWatching.length) / 134));
         $(".bigBar .rstrong").text(dataWatching.length);
@@ -250,7 +250,7 @@ function chamberGrid(target, data, party, lean, index, tier, first) {
             return (d.party == party && d.lean == lean);
         }).sort(function(a, b) {
 
-            if (party == "GOP") { return d3['ascending'](a.margin, b.margin); }
+            if (party == "R") { return d3['ascending'](a.margin, b.margin); }
             else { return d3['descending'](a.margin, b.margin); }
     });
 
@@ -283,20 +283,20 @@ function chamberGrid(target, data, party, lean, index, tier, first) {
         .attr("class", function(d) {
             var color = "";
             
-            if (d.party == "GOP" && d.watching == "Y") { color = "r4"; }
-            else if (d.party == "GOP") { color = "r1"; }
+            if (d.party == "R" && d.watching == "Y") { color = "r4"; }
+            else if (d.party == "R") { color = "r1"; }
             else if (d.party == "DFL" && d.watching == "Y") { color = "d4"; }
             else if (d.party == "DFL") { color = "d1"; }
 
             if (d.special_status == "open" && d.party == "DFL" && d.watching == "Y") { color = "stripe-d-open-y"; }
-            else if (d.special_status == "open" && d.party == "GOP" && d.watching == "Y") { color = "stripe-r-open-y"; }
+            else if (d.special_status == "open" && d.party == "R" && d.watching == "Y") { color = "stripe-r-open-y"; }
             else if (d.special_status == "open" && d.party == "DFL" && d.watching == "N") { color = "stripe-d-open-n"; }
-            else if (d.special_status == "open" && d.party == "GOP" && d.watching == "N") { color = "stripe-r-open-n"; }
+            else if (d.special_status == "open" && d.party == "R" && d.watching == "N") { color = "stripe-r-open-n"; }
 
             if (d.special_status == "rematch" && d.party == "DFL" && d.watching == "Y") { color = "stripe-d-rematch-y"; }
-            else if (d.special_status == "rematch" && d.party == "GOP" && d.watching == "Y") { color = "stripe-r-rematch-y"; }
+            else if (d.special_status == "rematch" && d.party == "R" && d.watching == "Y") { color = "stripe-r-rematch-y"; }
             else if (d.special_status == "rematch" && d.party == "DFL" && d.watching == "N") { color = "stripe-d-rematch-n"; }
-            else if (d.special_status == "rematch" && d.party == "GOP" && d.watching == "N") { color = "stripe-r-rematch-n"; }
+            else if (d.special_status == "rematch" && d.party == "R" && d.watching == "N") { color = "stripe-r-rematch-n"; }
 
             return color + " seat seat" + first;
         })
@@ -322,12 +322,12 @@ chamberGrid("#tier5", data, "DFL", "D Lean", 2, "neg", 10);
 chamberGrid("#tier4", data, "DFL", "D Strong", 3, "neg", 11);
 
 
-chamberGrid("#tier12", data, "GOP", "R Strong", 3, "pos", 0);
-chamberGrid("#tier11", data, "GOP", "R Lean", 2, "pos", 1);
-chamberGrid("#tier10", data, "GOP", "R Competitive", 1, "pos", 2);
-chamberGrid("#tier7", data, "GOP", "R Competitive", 1, "neg", 3);
-chamberGrid("#tier8", data, "GOP", "R Lean", 2, "neg", 4);
-chamberGrid("#tier9", data, "GOP", "R Strong", 3, "neg", 5);
+chamberGrid("#tier12", data, "R", "R Strong", 3, "pos", 0);
+chamberGrid("#tier11", data, "R", "R Lean", 2, "pos", 1);
+chamberGrid("#tier10", data, "R", "R Competitive", 1, "pos", 2);
+chamberGrid("#tier7", data, "R", "R Competitive", 1, "neg", 3);
+chamberGrid("#tier8", data, "R", "R Lean", 2, "neg", 4);
+chamberGrid("#tier9", data, "R", "R Strong", 3, "neg", 5);
 
 
 // render district map
