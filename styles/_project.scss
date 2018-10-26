@@ -15,10 +15,13 @@
      padding-top: 40px;
 }
  section.container-lg {
-     max-width:520px !important;
+     max-width:700px !important;
 }
  p {
+     max-width:520px;
      font-size:15px;
+     margin-left:auto;
+     margin-right:auto;
 }
  .elex-header h5 span{
      font-size: .9em;
@@ -27,6 +30,8 @@
  .elex-header h5 span, .elex-header .byline {
      color:black;
      font-weight: bold;
+     margin-right:auto;
+     margin-left:auto;
 }
  .elex-header .byline span {
      font-weight: normal;
@@ -63,6 +68,8 @@
  
  .slide {
      width:600px;
+     margin-top:40px;
+     margin-bottom:40px;
      margin-left:auto;
      margin-right:auto;
      .adjust {
@@ -440,13 +447,15 @@
          padding: 0 7px;
          margin-bottom: 3px;
     }
-     .chatter {
-         line-height:140%;
-         margin-bottom:12px;
+    .chatter {
+      font-size:0.8em;
+      font-family: "Benton Sans", Helvetica, Arial, sans-serif !important;
+      color:#333;
+      margin-bottom:20px;
     }
-     .chartTitle {
-         font-size:1.5em;
-         font-weight:900;
+    .chartTitle {
+      font-size:1.1em;
+      font-weight:900;
     }
      .map {
          text-align:center;
