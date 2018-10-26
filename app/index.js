@@ -307,7 +307,7 @@ function chamberGrid(target, data, party, lean, index, tier, first) {
             var status = d.first + " " + d.last + d.incumbent + " (" + d.party + ")";
             var opponent = "<div>vs. " + d.opponent + " (" + d.opponent_party + ")</div>";
             if (d.opponent == "null") { opponent = ""; }
-            return "<div class='districtName'>District " + d.seatName + "</div><div>" + status + "</div>" + opponent + "<div class='tipCat'>CPVI</div><div>" + d.cpvi + "</div><div><div class='tipCat'>Current member from</div>" + d.from + "</div><div><div class='tipCat'>Trump margin</div>" + d3.format("+.0f")(d.margin) + "%</div><div class='tipCat'>Special status</div><div>" + d.special_status + "</div>";
+            return "<div class='districtName'>District " + d.seatName + "</div><div>" + status + "</div>" + opponent + "<div class='tipCat'>CPVI</div><div>" + d.cpvi + "</div><div><div class='tipCat'>Current member from</div>" + d.from + "</div><div><div class='tipCat'>Trump margin</div>" + d3.format("+.1f")(d.margin) + "%</div><div class='tipCat'>Special status</div><div>" + d.special_status + "</div>";
         }));
 
     // }
